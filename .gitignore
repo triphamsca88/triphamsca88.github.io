@@ -10,3 +10,5 @@ Thumbs.db
 # Local only: CLAUDE.md lists forbidden personal strings, never publish it
 CLAUDE.md
 .privacy-patterns
+# Local review page, never deploy
+public/img/_preview.html
