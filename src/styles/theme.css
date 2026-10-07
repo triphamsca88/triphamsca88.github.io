@@ -1,0 +1,18 @@
+/* Design tokens: Pham Duc Tri portfolio (see CLAUDE.md) */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Sora:wght@600;700&display=swap');
+
+:root {
+  --navy-900: #081A2B;
+  --navy-800: #0D2740;
+  --navy-700: #11304D;
+  --teal-500: #2EC4B6;
+  --amber-400: #F4A259;
+  --sand-100: #F6F1E7;
+  --paper: #FAFBFC;
+  --ink: #1B2B3A;
+  --muted: #5B7083;
+
+  --font-heading: 'Sora', 'Segoe UI', system-ui, sans-serif;
+  --font-body: 'Be Vietnam Pro', 'Segoe UI', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'Cascadia Mono', Consolas, monospace;
+}
