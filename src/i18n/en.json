@@ -52,18 +52,6 @@
     "certifications": "Certifications",
     "awards": "Honors & Awards"
   },
-  "about": {
-    "study": "Studying",
-    "studyValue": "Logistics Technology, UEH",
-    "latest": "Latest role",
-    "latestValue": "Supply Chain Analyst Intern, Cofano Asia",
-    "languages": "Languages",
-    "languagesValue": "English (IELTS 7.5, CEFR C1)",
-    "gpa": "GPA",
-    "glance": "At a glance",
-    "email": "Email",
-    "social": "Social"
-  },
   "common": {
     "present": "Present",
     "to": "to",
@@ -72,7 +60,6 @@
     "close": "Close",
     "project": "Project",
     "roles": "{{count}} roles",
-    "credentialId": "Credential ID",
     "issued": "Issued",
     "openImage": "Open certificate image",
     "escHint": "Press Esc to close"
@@ -105,9 +92,7 @@
     "backToTop": "Back to top"
   },
   "skills": {
-    "count": "{{count}} skills",
-    "tools": "{{count}} tools",
-    "languages": "English proficiency",
-    "overall": "{{test}} overall, out of 9"
+    "overall": "{{test}} overall band",
+    "bands": "{{test}} band scores"
   }
 }

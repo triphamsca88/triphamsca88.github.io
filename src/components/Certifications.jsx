@@ -20,10 +20,6 @@ function readFilter() {
   }
 }
 
-function shortId(id) {
-  return id.length > 20 ? `${id.slice(0, 8)}…${id.slice(-6)}` : id
-}
-
 function CertCard({ c }) {
   const { t, lang } = useLocalized()
   const openLightbox = useLightbox()
@@ -48,11 +44,6 @@ function CertCard({ c }) {
         <h3 className="cert-name">{c.name}</h3>
         <div className="cert-meta">
           <span>{t('common.issued')} <span className="mono">{formatDate(c.date, lang)}</span></span>
-          {c.credentialId && (
-            <span className="cert-id" title={c.credentialId}>
-              {t('common.credentialId')} <span className="mono">{shortId(c.credentialId)}</span>
-            </span>
-          )}
         </div>
         <div className="cert-foot">
           <span className="cert-cat">{t(`filters.${c.category}`)}</span>

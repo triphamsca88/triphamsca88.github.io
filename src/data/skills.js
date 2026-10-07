@@ -1,6 +1,5 @@
 // Source of truth: NOI_DUNG_PORTFOLIO.md, section 5.
-// `icon` on a group maps to a lucide icon in components/Skills.jsx;
-// `icon` on a tool maps to a small brand style mark in components/ToolIcon.jsx.
+// Data Analytics tools show the software's own logo (public/img/tools).
 // Languages show the CEFR level and IELTS band scores (out of 9).
 
 const skills = [
@@ -10,14 +9,10 @@ const skills = [
     layout: 'tools',
     title: { en: 'Data Analytics', vi: 'Phân tích dữ liệu' },
     items: [
-      { icon: 'sql', name: 'SQL', detail: { en: 'MySQL', vi: 'MySQL' } },
-      { icon: 'powerbi', name: 'Power BI' },
-      {
-        icon: 'excel',
-        name: { en: 'Advanced Excel', vi: 'Excel nâng cao' },
-        detail: { en: 'Pivot Tables, XLOOKUP, Power Query, DAX', vi: 'Pivot Tables, XLOOKUP, Power Query, DAX' },
-      },
-      { icon: 'python', name: 'Python', detail: { en: 'Basic', vi: 'Cơ bản' } },
+      { logo: 'img/tools/mysql.svg', name: 'SQL', detail: { en: 'MySQL' } },
+      { logo: 'img/tools/powerbi.svg', name: 'Power BI' },
+      { logo: 'img/tools/excel.svg', name: { en: 'Advanced Excel' }, detail: { en: 'Pivot Tables, XLOOKUP, Power Query, DAX' } },
+      { logo: 'img/tools/python.svg', name: 'Python', detail: { en: 'Basic' } },
     ],
   },
   {

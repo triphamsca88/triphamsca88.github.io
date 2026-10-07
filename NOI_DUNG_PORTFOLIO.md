@@ -62,7 +62,7 @@ Third year Logistics Technology student with a proactive, improvement driven min
 
 ## 5. Skills
 
-* Data Analytics: SQL (MySQL), Power BI, Advanced Excel (Pivot Tables, XLOOKUP, Power Query, DAX), Python (basic, từ Google Data Analytics)
+* Data Analytics: SQL (MySQL), Power BI, Advanced Excel (Pivot Tables, XLOOKUP, Power Query, DAX), Python (basic, từ Google Data Analytics). Trên web hiển thị kèm logo gốc của từng phần mềm (`public/img/tools/`).
 * Supply Chain: End to End Supply Chain Overview, Demand Forecasting, S&OP, Inventory Management, Lean Six Sigma, Network Optimisation, MPS/MRP, Vehicle Routing
 * Soft skills: Project Management, Risk Management, Stakeholder Management, Team Coordination, Problem Solving, Planning and Execution
 * Languages: English (IELTS Academic 7.5, CEFR C1; Listening 7.5, Reading 7.5, Writing 6.5, Speaking 7.5)
