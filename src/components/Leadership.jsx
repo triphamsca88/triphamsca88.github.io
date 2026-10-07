@@ -16,7 +16,7 @@ export default function Leadership() {
   const { t, L, lang } = useLocalized()
   const orgs = newestFirst(leadership.map(withSpan))
   return (
-    <section className="section section--sand" id="leadership" aria-labelledby="leadership-title" tabIndex={-1}>
+    <section className="section section--alt" id="leadership" aria-labelledby="leadership-title" tabIndex={-1}>
       <div className="section__inner">
         <SectionHeader code={codeOf('leadership')} title={t('sections.leadership')} id="leadership-title" />
         <ol className="timeline">

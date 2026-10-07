@@ -77,7 +77,7 @@ function ProjectCard({ p }) {
 export default function Projects() {
   const { t } = useLocalized()
   return (
-    <section className="section section--sand" id="projects" aria-labelledby="projects-title" tabIndex={-1}>
+    <section className="section section--alt" id="projects" aria-labelledby="projects-title" tabIndex={-1}>
       <div className="section__inner">
         <SectionHeader code={codeOf('projects')} title={t('sections.projects')} id="projects-title" />
         {projects.length === 0 ? (

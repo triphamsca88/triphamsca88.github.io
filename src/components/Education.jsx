@@ -9,7 +9,7 @@ import CertificateButton from './CertificateButton.jsx'
 export default function Education() {
   const { t, L, lang } = useLocalized()
   return (
-    <section className="section section--sand" id="education" aria-labelledby="education-title" tabIndex={-1}>
+    <section className="section section--alt" id="education" aria-labelledby="education-title" tabIndex={-1}>
       <div className="section__inner">
         <SectionHeader code={codeOf('education')} title={t('sections.education')} id="education-title" />
         <ol className="timeline">

@@ -27,10 +27,11 @@
     "github": "GitHub",
     "copy": "Copy email address",
     "copied": "Copied",
-    "copyShort": "Copy"
+    "copyShort": "Copy",
+    "facebook": "Facebook"
   },
   "hero": {
-    "greeting": "Hello, I'm",
+    "greeting": "Hi, I'm",
     "aboutBtn": "About me",
     "experienceBtn": "Experience"
   },
@@ -56,7 +57,6 @@
     "awards": "Honors & Awards"
   },
   "about": {
-    "manifest": "Profile manifest",
     "study": "Studying",
     "studyValue": "Logistics Technology, UEH",
     "latest": "Latest role",
@@ -64,7 +64,9 @@
     "languages": "Languages",
     "languagesValue": "English (C1), Vietnamese (Native)",
     "gpa": "GPA",
-    "contact": "Contact"
+    "glance": "At a glance",
+    "email": "Email",
+    "social": "Social"
   },
   "common": {
     "present": "Present",
@@ -106,5 +108,10 @@
     "rights": "All rights reserved.",
     "updated": "Last updated",
     "backToTop": "Back to top"
+  },
+  "skills": {
+    "count": "{{count}} skills",
+    "tools": "{{count}} tools",
+    "languages": "{{count}} languages"
   }
 }

@@ -44,7 +44,7 @@ function AwardRow({ a }) {
 export default function Awards() {
   const { t } = useLocalized()
   return (
-    <section className="section section--sand" id="awards" aria-labelledby="awards-title" tabIndex={-1}>
+    <section className="section section--alt" id="awards" aria-labelledby="awards-title" tabIndex={-1}>
       <div className="section__inner">
         <SectionHeader code={codeOf('awards')} title={t('sections.awards')} id="awards-title" />
         <ol className="awards">

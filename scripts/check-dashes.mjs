@@ -2,7 +2,7 @@
 // URLs, ids, asset paths and ISO dates are skipped. Exit code 1 when something is found.
 import { readFileSync } from 'node:fs'
 
-const SKIP_KEYS = new Set(['id', 'logo', 'image', 'thumb', 'verifyUrl', 'linkedin', 'github', 'demo', 'date', 'start', 'end', 'email', 'avatar'])
+const SKIP_KEYS = new Set(['id', 'logo', 'image', 'thumb', 'verifyUrl', 'linkedin', 'github', 'demo', 'date', 'start', 'end', 'email', 'avatar', 'facebook', 'credentialId'])
 const DASH = /[-‐-―−]/
 const hits = []
 

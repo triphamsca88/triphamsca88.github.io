@@ -12,7 +12,7 @@ from collections import deque
 from pathlib import Path
 
 import pymupdf
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageFilter
 
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "_source"
@@ -39,7 +39,11 @@ LOGOS = {
     "VSCC.png": "vscc",
     "hackathong UMT.jpg": "umt_hackathon",
     "scmission.png": "scmission",
+    "LOGO-VNV.png": "vnv",
 }
+
+# Logos delivered on an opaque white canvas: trim the white margin before resizing.
+TRIM_WHITE = {"LOGO-VNV.png"}
 
 # (source file, output folder, output name)
 CERTS = [
@@ -57,17 +61,19 @@ CERTS = [
     ("SCMISSION.jpg", "awards", "scmission_2026"),
     ("LASTMILE3I.jpg", "awards", "last_mile_optimizer_2025"),
     ("HACKATHONDIGIPORTUMT.jpg", "awards", "hackathon_digiport_2025"),
+    ("CSCMP INVENTORY.jpg", "certificates", "cscmp_inventory_management"),
+    ("inventoryexcel.jpg", "certificates", "excel_inventory_problems"),
+    ("forecasting excel.jpg", "certificates", "excel_forecasting"),
+    ("udemy.pdf", "certificates", "udemy_excel_dashboard"),
+    ("datascienceaca.pdf", "certificates", "dsa_data_analyst_foundations"),
     # LSMSESCHOLAR.jpg intentionally not published: mentions "financial hardship" (pending owner decision).
 ]
 
 # Solid redaction boxes in source pixel coordinates (x0, y0, x1, y1), padded generously.
 REDACTIONS = {
+    # Owner decision (2026-10-07): on the IELTS form only the Candidate ID (national ID number) is masked.
     "ielts 7.5.jpg": [
-        (742, 212, 868, 264),    # Candidate Number value
-        (672, 268, 862, 456),    # portrait photo
         (176, 392, 456, 447),    # Candidate ID value
-        (197, 458, 388, 512),    # Date of Birth value
-        (658, 993, 876, 1050),   # Test Report Form Number value
     ],
     "CTDSCHOLARS.jpg": [
         (180, 322, 290, 360),    # Date of birth value
@@ -156,11 +162,46 @@ def remove_fake_checkerboard(img: Image.Image) -> Image.Image:
     return img.crop(img.getchannel("A").getbbox())
 
 
+def trim_white(img: Image.Image) -> Image.Image:
+    """Crop away a near white (or transparent) margin around the artwork."""
+    rgba = img.convert("RGBA")
+    bg = Image.new("RGBA", rgba.size, (255, 255, 255, 255))
+    flat = Image.alpha_composite(bg, rgba).convert("L")
+    mask = flat.point(lambda v: 255 if v < 235 else 0)
+    box = mask.getbbox()
+    if not box:
+        return rgba
+    pad = round(max(rgba.size) * 0.02)
+    x0, y0, x1, y1 = box
+    return rgba.crop((max(0, x0 - pad), max(0, y0 - pad), min(rgba.width, x1 + pad), min(rgba.height, y1 + pad)))
+
+
+def process_avatar(rows):
+    """Square, centre cropped profile photo from _source/avatar.(png|jpg)."""
+    src = next((SRC / n for n in ("avatar.jpg", "avatar.jpeg", "avatar.png") if (SRC / n).exists()), None)
+    if not src:
+        return
+    img = Image.open(src).convert("RGB")
+    side = min(img.size)
+    left = (img.width - side) // 2
+    top = max(0, (img.height - side) // 3)  # keep the face, trim a little more from the bottom
+    img = img.crop((left, top, left + side, top + side))
+    if side < 320:
+        # Small source photo: upscale once with Lanczos and a light unsharp mask, crisper than browser scaling.
+        img = img.resize((320, 320), Image.LANCZOS).filter(ImageFilter.UnsharpMask(radius=1.2, percent=60, threshold=2))
+    img.thumbnail((480, 480), Image.LANCZOS)
+    dest = OUT / "avatar.webp"
+    img.save(dest, "WEBP", quality=92, method=6)
+    rows.append((src.name, "img/avatar.webp", f"{img.width}x{img.height}", dest.stat().st_size))
+
+
 def process_logos(rows):
     out_dir = OUT / "logo"
     out_dir.mkdir(parents=True, exist_ok=True)
     for src_name, out_name in LOGOS.items():
         img = Image.open(SRC / "Logo" / src_name)
+        if src_name in TRIM_WHITE:
+            img = trim_white(img)
         if src_name == "Linkedin.png":
             img = remove_fake_checkerboard(img)
         img = img.convert("RGBA")
@@ -196,6 +237,7 @@ def process_certs(rows):
 
 def main():
     rows = []
+    process_avatar(rows)
     process_logos(rows)
     process_certs(rows)
     print(f"{'source':48} {'output':58} {'size':>11} {'KB':>6}")

@@ -27,7 +27,8 @@
     "github": "GitHub",
     "copy": "Sao chép địa chỉ email",
     "copied": "Đã sao chép",
-    "copyShort": "Sao chép"
+    "copyShort": "Sao chép",
+    "facebook": "Facebook"
   },
   "hero": {
     "greeting": "Xin chào, tôi là",
@@ -56,7 +57,6 @@
     "awards": "Giải thưởng và Danh hiệu"
   },
   "about": {
-    "manifest": "Hồ sơ tóm tắt",
     "study": "Đang học",
     "studyValue": "Công nghệ Logistics, UEH",
     "latest": "Vị trí gần nhất",
@@ -64,7 +64,9 @@
     "languages": "Ngôn ngữ",
     "languagesValue": "Tiếng Anh (C1), Tiếng Việt (Bản ngữ)",
     "gpa": "GPA",
-    "contact": "Liên hệ"
+    "glance": "Tổng quan",
+    "email": "Email",
+    "social": "Mạng xã hội"
   },
   "common": {
     "present": "nay",
@@ -106,5 +108,10 @@
     "rights": "Bảo lưu mọi quyền.",
     "updated": "Cập nhật lần cuối",
     "backToTop": "Lên đầu trang"
+  },
+  "skills": {
+    "count": "{{count}} kỹ năng",
+    "tools": "{{count}} công cụ",
+    "languages": "{{count}} ngôn ngữ"
   }
 }

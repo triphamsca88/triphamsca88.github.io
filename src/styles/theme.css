@@ -20,7 +20,8 @@
   --on-navy: #EAF4FB;    /* body text on navy */
   --on-navy-muted: #A9C0D2; /* 7:1 on --navy-900 */
   --line: #E1E6EC;       /* hairlines on light grounds */
-  --line-sand: #E6DDCB;
+  --mist: #F1F5F8;       /* cool alternate section ground, harmonises with navy and teal */
+  --line-mist: #DCE4EB;
   --route: rgba(10, 122, 112, 0.45); /* dashed route lines on light grounds */
   --white: #FFFFFF;
 

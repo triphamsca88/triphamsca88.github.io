@@ -1,27 +1,28 @@
 // Source of truth: NOI_DUNG_PORTFOLIO.md, section 5.
-// `icon` keys map to small inline SVG marks in components/ToolIcon.jsx.
+// `icon` on a group maps to a lucide icon in components/Skills.jsx;
+// `icon` on a tool maps to a small brand style mark in components/ToolIcon.jsx.
+// Language `cefr` positions the level on the A1 to C2 scale ('native' fills it).
 
 const skills = [
   {
     id: 'data',
-    code: 'DA',
+    icon: 'data',
+    layout: 'tools',
     title: { en: 'Data Analytics', vi: 'Phân tích dữ liệu' },
     items: [
-      { icon: 'sql', label: { en: 'SQL (MySQL)', vi: 'SQL (MySQL)' } },
-      { icon: 'powerbi', label: { en: 'Power BI', vi: 'Power BI' } },
+      { icon: 'sql', name: 'SQL', detail: { en: 'MySQL', vi: 'MySQL' } },
+      { icon: 'powerbi', name: 'Power BI' },
       {
         icon: 'excel',
-        label: {
-          en: 'Advanced Excel (Pivot Tables, XLOOKUP, Power Query, DAX)',
-          vi: 'Excel nâng cao (Pivot Tables, XLOOKUP, Power Query, DAX)',
-        },
+        name: { en: 'Advanced Excel', vi: 'Excel nâng cao' },
+        detail: { en: 'Pivot Tables, XLOOKUP, Power Query, DAX', vi: 'Pivot Tables, XLOOKUP, Power Query, DAX' },
       },
-      { icon: 'python', label: { en: 'Python (basic)', vi: 'Python (cơ bản)' } },
+      { icon: 'python', name: 'Python', detail: { en: 'Basic', vi: 'Cơ bản' } },
     ],
   },
   {
     id: 'supply_chain',
-    code: 'SC',
+    icon: 'supply',
     title: { en: 'Supply Chain', vi: 'Chuỗi cung ứng' },
     items: [
       { label: { en: 'End to End Supply Chain Overview', vi: 'Tổng quan chuỗi cung ứng end to end' } },
@@ -36,7 +37,7 @@ const skills = [
   },
   {
     id: 'soft',
-    code: 'SS',
+    icon: 'soft',
     title: { en: 'Soft skills', vi: 'Kỹ năng mềm' },
     items: [
       { label: { en: 'Project Management', vi: 'Quản lý dự án' } },
@@ -49,13 +50,24 @@ const skills = [
   },
   {
     id: 'languages',
-    code: 'LG',
+    icon: 'languages',
+    layout: 'languages',
     title: { en: 'Languages', vi: 'Ngôn ngữ' },
     items: [
-      { label: { en: 'English (IELTS Academic 7.5, CEFR C1)', vi: 'Tiếng Anh (IELTS Academic 7.5, CEFR C1)' } },
-      { label: { en: 'Vietnamese (Native)', vi: 'Tiếng Việt (Bản ngữ)' } },
+      {
+        name: { en: 'English', vi: 'Tiếng Anh' },
+        detail: { en: 'IELTS Academic 7.5, CEFR C1', vi: 'IELTS Academic 7.5, CEFR C1' },
+        cefr: 'C1',
+      },
+      {
+        name: { en: 'Vietnamese', vi: 'Tiếng Việt' },
+        detail: { en: 'Native', vi: 'Bản ngữ' },
+        cefr: 'native',
+      },
     ],
   },
 ]
+
+export const CEFR_LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']
 
 export default skills

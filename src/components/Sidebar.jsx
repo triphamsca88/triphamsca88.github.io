@@ -12,7 +12,9 @@ import { SECTION_IDS } from '../sections.js'
 function Avatar({ small }) {
   return (
     <span className={`avatar${small ? ' avatar--sm' : ''}`} aria-hidden={small ? 'true' : undefined}>
-      {profile.avatar ? <img src={asset(profile.avatar)} alt={profile.name} /> : profile.initials}
+      {profile.avatar
+        ? <img src={asset(profile.avatar)} alt={small ? '' : `Portrait of ${profile.name}`} width="320" height="320" decoding="async" />
+        : profile.initials}
     </span>
   )
 }
@@ -43,8 +45,10 @@ export default function Sidebar() {
         <div className="sidebar__id">
           <Avatar />
           <p className="sidebar__name">{profile.name}</p>
-          <span className="container-tag">{L(profile.title)}</span>
-          <p className="sidebar__tagline">{L(profile.tagline)}</p>
+          <div className="sidebar__roles">
+            <p className="sidebar__role">{L(profile.title)}</p>
+            <p className="sidebar__tagline">{L(profile.tagline)}</p>
+          </div>
         </div>
         <RouteNav active={active} />
         <div className="sidebar__foot">

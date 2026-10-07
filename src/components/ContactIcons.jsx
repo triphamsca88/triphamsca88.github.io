@@ -1,7 +1,7 @@
 import { Mail } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import profile from '../data/profile.js'
-import { GitHubIcon, LinkedInIcon } from './BrandIcon.jsx'
+import { FacebookIcon, GitHubIcon, LinkedInIcon } from './BrandIcon.jsx'
 
 export default function ContactIcons() {
   const { t } = useTranslation()
@@ -15,6 +15,9 @@ export default function ContactIcons() {
       </a>
       <a className="icon-btn" href={profile.github} target="_blank" rel="noopener noreferrer" aria-label={t('contact.github')} title="GitHub">
         <GitHubIcon />
+      </a>
+      <a className="icon-btn" href={profile.facebook} target="_blank" rel="noopener noreferrer" aria-label={t('contact.facebook')} title="Facebook">
+        <FacebookIcon />
       </a>
     </div>
   )

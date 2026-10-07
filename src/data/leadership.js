@@ -52,7 +52,7 @@ const leadership = [
   {
     id: 'kindnom',
     org: 'Kindnom Volunteer Club (VNV)',
-    logo: '', // no logo yet
+    logo: 'img/logo/vnv.webp',
     roles: [
       {
         title: { en: 'Project Coordinator', vi: 'Điều phối viên Dự án' },
