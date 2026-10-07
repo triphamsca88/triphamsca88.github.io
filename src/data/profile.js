@@ -18,7 +18,7 @@ const profile = {
   linkedin: 'https://www.linkedin.com/in/duc-tri-pham-210730393/',
   github: 'https://github.com/triphamsca88',
   facebook: 'https://www.facebook.com/pham.uc.tri.444071',
-  // The owner's CV, published unchanged (copy of _source/CV/CV_RCM.pdf, owner decision 2026-10-07)
+  // The owner's CV, published unchanged (copy of _source/CV/MYCV.pdf, owner decision 2026-10-07)
   cv: 'cv/Pham_Duc_Tri_CV.pdf',
   summary: {
     en: 'Third year Logistics Technology student with a proactive, improvement driven mindset and a solid foundation in supply chain data analytics. Completed a four month internship at Cofano, contributing to a performance analytics dashboard for barge fleet operations that now runs in live operation within the Gemadept ecosystem. Aiming to become a Supply Chain Analyst who uses data to support optimal decision making in demand forecasting, inventory management, process streamlining and operational efficiency.',

@@ -19,18 +19,18 @@ function ToolList({ items }) {
   )
 }
 
-// English: CEFR level, IELTS overall band and the four skill bands (out of 9).
+// English: IELTS overall band beside the test name, then the four skill bands (out of 9).
 function LanguageBlock({ items }) {
   const { t, L } = useLocalized()
   return items.map((item) => (
     <div className="lang" key={L(item.name)}>
-      <div className="lang__head">
-        <span className="lang__name">{L(item.name)}</span>
-        <span className="lang__cefr">CEFR {item.cefr}</span>
-      </div>
+      <span className="lang__name">{L(item.name)}</span>
       <div className="lang__overall">
         <span className="lang__score">{item.overall.toFixed(1)}</span>
-        <span className="lang__of">{t('skills.overall', { test: item.test })}</span>
+        <span className="lang__test">
+          <strong>{item.test}</strong>
+          <span>{t('skills.overall')}</span>
+        </span>
       </div>
       <ul className="bands" aria-label={t('skills.bands', { test: item.test })}>
         {item.bands.map((b) => (

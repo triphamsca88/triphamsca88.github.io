@@ -92,7 +92,7 @@
     "backToTop": "Back to top"
   },
   "skills": {
-    "overall": "{{test}} overall band",
+    "overall": "Overall band score",
     "bands": "{{test}} band scores"
   },
   "cv": {
