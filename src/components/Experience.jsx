@@ -31,7 +31,12 @@ export default function Experience() {
                   {L(x.badge)}
                 </p>
               )}
-              {x.project && <p className="tl-project">{L(x.project)}</p>}
+              {x.project && (
+                <div className="tl-project">
+                  <span className="tl-project__label">{t('common.project')}</span>
+                  <p className="tl-project__text">{L(x.project).replace(/^Project:\s*/, '')}</p>
+                </div>
+              )}
               <Bullets items={x.bullets.map(L)} />
               {x.certificate && (
                 <div className="tl-actions">
