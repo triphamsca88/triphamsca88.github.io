@@ -1,1 +1,111 @@
-{}
+{
+  "meta": {
+    "title": "Pham Duc Tri | Supply Chain Analyst",
+    "description": "Third year Logistics Technology student at UEH with a solid foundation in supply chain data analytics. Supply Chain Analyst Intern at Cofano Asia."
+  },
+  "nav": {
+    "about": "About",
+    "education": "Education",
+    "experience": "Experience",
+    "leadership": "Leadership",
+    "skills": "Skills",
+    "projects": "Projects",
+    "certifications": "Certifications",
+    "awards": "Honors & Awards",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "primary": "Sections",
+    "skip": "Skip to content"
+  },
+  "lang": {
+    "label": "Language",
+    "switchTo": "Switch to Vietnamese"
+  },
+  "contact": {
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "copy": "Copy email address",
+    "copied": "Copied"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "aboutBtn": "About me",
+    "experienceBtn": "Experience",
+    "routeLabel": "Route: data to decision"
+  },
+  "kpi": {
+    "aria": "Key figures",
+    "gpa": "GPA",
+    "gpaNote": "Cumulative, {{note}}",
+    "internship": "Months",
+    "internshipNote": "Supply Chain Analyst internship",
+    "awards": "Awards",
+    "awardsNote": "Honors and awards",
+    "certificates": "Certificates",
+    "certificatesNote": "Professional certifications"
+  },
+  "sections": {
+    "about": "About me",
+    "education": "Education",
+    "experience": "Experience",
+    "leadership": "Leadership & Activities",
+    "skills": "Skills",
+    "projects": "Projects",
+    "certifications": "Certifications",
+    "awards": "Honors & Awards"
+  },
+  "about": {
+    "manifest": "Profile manifest",
+    "study": "Studying",
+    "studyValue": "Logistics Technology, UEH",
+    "latest": "Latest role",
+    "latestValue": "Supply Chain Analyst Intern, Cofano Asia",
+    "languages": "Languages",
+    "languagesValue": "English (C1), Vietnamese (Native)",
+    "gpa": "GPA",
+    "contact": "Contact"
+  },
+  "common": {
+    "present": "Present",
+    "to": "to",
+    "viewCertificate": "View certificate",
+    "verify": "Verify",
+    "close": "Close",
+    "project": "Project",
+    "kpisBuilt": "KPIs built",
+    "roles": "{{count}} roles",
+    "credentialId": "Credential ID",
+    "issued": "Issued",
+    "openImage": "Open certificate image",
+    "escHint": "Press Esc to close"
+  },
+  "filters": {
+    "label": "Filter certifications",
+    "all": "All",
+    "supply_chain": "Supply Chain",
+    "data": "Data",
+    "ai": "AI",
+    "language": "Language",
+    "showing": "Showing {{count}} of {{total}}"
+  },
+  "projects": {
+    "status": "In transit",
+    "title": "In transit: projects arriving soon",
+    "body": "Project case studies will be published here as they are completed.",
+    "eta": "ETA: next update",
+    "problem": "Problem",
+    "approach": "Approach",
+    "result": "Result",
+    "code": "Code",
+    "demo": "Live demo"
+  },
+  "awards": {
+    "rank": "Rank"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "updated": "Last updated",
+    "backToTop": "Back to top"
+  }
+}
