@@ -26,18 +26,18 @@
     "linkedin": "LinkedIn",
     "github": "GitHub",
     "copy": "Copy email address",
-    "copied": "Copied"
+    "copied": "Copied",
+    "copyShort": "Copy"
   },
   "hero": {
     "greeting": "Hello, I'm",
     "aboutBtn": "About me",
-    "experienceBtn": "Experience",
-    "routeLabel": "Route: data to decision"
+    "experienceBtn": "Experience"
   },
   "kpi": {
     "aria": "Key figures",
     "gpa": "GPA",
-    "gpaNote": "Cumulative, {{note}}",
+    "gpaNote": "Equivalent to {{note}}",
     "internship": "Months",
     "internshipNote": "Supply Chain Analyst internship",
     "awards": "Awards",

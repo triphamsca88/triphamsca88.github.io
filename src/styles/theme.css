@@ -1,7 +1,9 @@
-/* Design tokens: Pham Duc Tri portfolio (see CLAUDE.md) */
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Sora:wght@600;700&display=swap');
+/* Design tokens: Pham Duc Tri portfolio (see CLAUDE.md).
+   Google Fonts (Sora, Be Vietnam Pro, JetBrains Mono, display=swap) are loaded with
+   <link rel="preconnect"> + <link rel="stylesheet"> in index.html so they never block CSS parsing. */
 
 :root {
+  /* Palette from CLAUDE.md */
   --navy-900: #081A2B;
   --navy-800: #0D2740;
   --navy-700: #11304D;
@@ -12,7 +14,26 @@
   --ink: #1B2B3A;
   --muted: #5B7083;
 
-  --font-heading: 'Sora', 'Segoe UI', system-ui, sans-serif;
-  --font-body: 'Be Vietnam Pro', 'Segoe UI', system-ui, sans-serif;
+  /* Derived shades so accent text stays WCAG AA on light grounds */
+  --teal-700: #0A7A70;   /* 5.0:1 on --paper */
+  --amber-700: #A0561A;  /* 5.3:1 on --paper */
+  --on-navy: #EAF4FB;    /* body text on navy */
+  --on-navy-muted: #A9C0D2; /* 7:1 on --navy-900 */
+  --line: #E1E6EC;       /* hairlines on light grounds */
+  --line-sand: #E6DDCB;
+  --route: rgba(10, 122, 112, 0.45); /* dashed route lines on light grounds */
+  --white: #FFFFFF;
+
+  --font-heading: 'Sora', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --font-body: 'Be Vietnam Pro', 'Segoe UI', system-ui, -apple-system, sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, 'Cascadia Mono', Consolas, monospace;
+
+  --sidebar-w: 288px;
+  --topbar-h: 64px;
+  --radius: 14px;
+  --radius-sm: 8px;
+  --shadow-sm: 0 1px 2px rgba(8, 26, 43, 0.06), 0 2px 8px rgba(8, 26, 43, 0.05);
+  --shadow-md: 0 10px 30px rgba(8, 26, 43, 0.10);
+
+  color-scheme: light;
 }

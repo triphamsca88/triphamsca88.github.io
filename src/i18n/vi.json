@@ -26,18 +26,18 @@
     "linkedin": "LinkedIn",
     "github": "GitHub",
     "copy": "Sao chép địa chỉ email",
-    "copied": "Đã sao chép"
+    "copied": "Đã sao chép",
+    "copyShort": "Sao chép"
   },
   "hero": {
     "greeting": "Xin chào, tôi là",
     "aboutBtn": "Giới thiệu",
-    "experienceBtn": "Kinh nghiệm",
-    "routeLabel": "Tuyến: từ dữ liệu đến quyết định"
+    "experienceBtn": "Kinh nghiệm"
   },
   "kpi": {
     "aria": "Số liệu nổi bật",
     "gpa": "GPA",
-    "gpaNote": "Tích lũy, {{note}}",
+    "gpaNote": "Tương đương {{note}}",
     "internship": "Tháng",
     "internshipNote": "Thực tập Supply Chain Analyst",
     "awards": "Giải thưởng",
