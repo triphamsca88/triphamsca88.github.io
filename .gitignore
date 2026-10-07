@@ -12,3 +12,4 @@ CLAUDE.md
 .privacy-patterns
 # Local review page, never deploy
 public/img/_preview.html
+dist-ssr

@@ -1,0 +1,17 @@
+// Bootstrap 5, trimmed to what this site uses: reboot, the grid and a few utilities.
+// Visual styling lives in app.css; this keeps the stylesheet small so style recalculation stays fast on phones.
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/variables-dark';
+@import 'bootstrap/scss/maps';
+@import 'bootstrap/scss/mixins';
+@import 'bootstrap/scss/utilities';
+
+// Utilities API limited to display, flex wrap and gap.
+$utilities: map-get-multiple($utilities, ('display', 'flex-wrap', 'gap'));
+
+@import 'bootstrap/scss/root';
+@import 'bootstrap/scss/reboot';
+@import 'bootstrap/scss/grid';
+@import 'bootstrap/scss/helpers/visually-hidden';
+@import 'bootstrap/scss/utilities/api';

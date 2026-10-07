@@ -25,6 +25,7 @@ function saveLang(lang) {
 }
 
 function applyDocumentLang(lang) {
+  if (typeof document === 'undefined') return // prerender (Node)
   document.documentElement.lang = lang
   const t = i18n.getFixedT(lang)
   document.title = t('meta.title')

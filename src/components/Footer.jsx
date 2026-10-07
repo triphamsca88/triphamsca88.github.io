@@ -14,7 +14,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer__inner">
         <div className="footer__meta">
-          <span>© {year} <strong>{profile.name}</strong>. {t('footer.rights')}</span>
+          <span suppressHydrationWarning>© {year} <strong>{profile.name}</strong>. {t('footer.rights')}</span>
           <span className="footer__updated">{t('footer.updated')}: {formatDate(BUILD_TIME.slice(0, 10), lang)}</span>
         </div>
         <div className="footer__right">

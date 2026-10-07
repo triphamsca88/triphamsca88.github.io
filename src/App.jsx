@@ -12,20 +12,17 @@ import Certifications from './components/Certifications.jsx'
 import Awards from './components/Awards.jsx'
 import Footer from './components/Footer.jsx'
 import { LightboxProvider } from './components/Lightbox.jsx'
-import { useScrollSpy } from './hooks/useScrollSpy.js'
-import { SECTION_IDS } from './sections.js'
 
 export default function App() {
   const { t } = useTranslation()
-  const active = useScrollSpy(SECTION_IDS)
   return (
     <LightboxProvider>
-      <a className="skip-link" href="#main">{t('nav.skip')}</a>
-      <Sidebar active={active} />
+      <a className="skip-link" href="#about">{t('nav.skip')}</a>
+      <Sidebar />
       <div className="main">
-        <Hero />
-        <KpiStrip />
-        <main id="main" tabIndex={-1}>
+        <main id="main">
+          <Hero />
+          <KpiStrip />
           <About />
           <Education />
           <Experience />

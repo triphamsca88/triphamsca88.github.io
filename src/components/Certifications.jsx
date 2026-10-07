@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { ExternalLink, FileText, ZoomIn } from 'lucide-react'
 import { useLocalized } from '../i18n/useLocalized.js'
 import certificates, { CERT_CATEGORIES } from '../data/certificates.js'
@@ -76,7 +76,9 @@ function CertCard({ c }) {
 
 export default function Certifications() {
   const { t } = useLocalized()
-  const [filter, setFilter] = useState(readFilter)
+  // Start from 'all' (matches the prerendered HTML), then restore the remembered filter.
+  const [filter, setFilter] = useState('all')
+  useEffect(() => { setFilter(readFilter()) }, [])
   const sorted = useMemo(() => newestFirst(certificates), [])
   const counts = useMemo(() => {
     const c = { all: certificates.length }

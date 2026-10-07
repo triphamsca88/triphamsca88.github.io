@@ -5,8 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "vite build && vite build --ssr src/entry-server.jsx --outDir dist-ssr && node scripts/prerender.mjs",
+    "preview": "vite preview",
+    "check": "sh scripts/privacy-scan.sh && node scripts/check-dashes.mjs"
   },
   "dependencies": {
     "bootstrap": "^5.3.8",
@@ -18,6 +19,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^6.1.2",
+    "sass": "^1.105.1",
     "vite": "^8.3.3"
   }
 }

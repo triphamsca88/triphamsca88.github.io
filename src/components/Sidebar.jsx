@@ -6,6 +6,8 @@ import { asset } from '../utils/asset.js'
 import RouteNav from './RouteNav.jsx'
 import ContactIcons from './ContactIcons.jsx'
 import LangSwitch from './LangSwitch.jsx'
+import { useScrollSpy } from '../hooks/useScrollSpy.js'
+import { SECTION_IDS } from '../sections.js'
 
 function Avatar({ small }) {
   return (
@@ -15,8 +17,10 @@ function Avatar({ small }) {
   )
 }
 
-export default function Sidebar({ active }) {
+export default function Sidebar() {
   const { t, L } = useLocalized()
+  // Scrollspy state lives here so only the menu re-renders while scrolling.
+  const active = useScrollSpy(SECTION_IDS)
   const [open, setOpen] = useState(false)
 
   // Close the mobile menu with Esc or when the viewport grows to desktop width.

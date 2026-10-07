@@ -6,6 +6,12 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: process.env.VITE_BASE || '/',
   plugins: [react()],
+  css: {
+    preprocessorOptions: {
+      // Bootstrap 5 Sass still uses @import and global functions; silence those upstream warnings.
+      scss: { quietDeps: true, silenceDeprecations: ['import', 'global-builtin', 'color-functions', 'mixed-decls', 'if-function'] },
+    },
+  },
   define: {
     __BUILD_TIME__: JSON.stringify(new Date().toISOString()),
   },
