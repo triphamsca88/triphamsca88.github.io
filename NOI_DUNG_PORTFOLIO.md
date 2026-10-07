@@ -83,7 +83,7 @@ Mô tả từng giải:
 4. Pitched a data driven barge scheduling algorithm (BOE) to maximise fleet capacity utilisation and relieve port congestion, earning an early Supply Chain Intern offer from Cofano Software Solutions Asia.
 5. Awarded the title LSMSE Scholar in recognition of academic excellence.
 
-Ghi chú: LinkedIn ghi LSMSE là May 2025 nhưng chứng nhận ghi 19 Oct 2025, dùng ngày trên chứng nhận. Chứng nhận LSMSE có cụm "financial hardship"; chủ portfolio tự quyết có hiển thị ảnh này hay không.
+Ghi chú: LinkedIn ghi LSMSE là May 2025 nhưng chứng nhận ghi 19 Oct 2025, dùng ngày trên chứng nhận. Chứng nhận LSMSE có cụm "financial hardship"; chủ portfolio đã đồng ý hiển thị ảnh (07 Oct 2026).
 
 ## 7. Certifications
 

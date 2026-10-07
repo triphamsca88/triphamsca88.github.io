@@ -77,8 +77,9 @@ const awards = [
       en: 'Awarded the title LSMSE Scholar in recognition of academic excellence.',
       vi: 'Được trao danh hiệu LSMSE Scholar nhằm ghi nhận thành tích học tập xuất sắc.',
     },
-    image: '', // certificate image withheld until the owner decides (see NOI_DUNG_PORTFOLIO.md)
-    thumb: '',
+    image: 'img/awards/lsmse_scholar_2025.webp',
+    thumb: 'img/awards/lsmse_scholar_2025_thumb.webp',
+    alt: 'Le So Memorial Scholarship of Excellence certificate, LSMSE Scholar, Sunflower Mission',
   },
 ]
 

@@ -66,7 +66,7 @@ CERTS = [
     ("forecasting excel.jpg", "certificates", "excel_forecasting"),
     ("udemy.pdf", "certificates", "udemy_excel_dashboard"),
     ("datascienceaca.pdf", "certificates", "dsa_data_analyst_foundations"),
-    # LSMSESCHOLAR.jpg intentionally not published: mentions "financial hardship" (pending owner decision).
+    ("LSMSESCHOLAR.jpg", "awards", "lsmse_scholar_2025"),  # owner approved publishing (2026-10-07)
 ]
 
 # Solid redaction boxes in source pixel coordinates (x0, y0, x1, y1), padded generously.
