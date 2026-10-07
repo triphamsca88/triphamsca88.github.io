@@ -3,7 +3,7 @@ import { useLocalized } from '../i18n/useLocalized.js'
 import awards from '../data/awards.js'
 import { newestFirst, formatDate } from '../utils/dates.js'
 import { asset } from '../utils/asset.js'
-import { codeOf } from '../sections.js'
+import { numOf } from '../sections.js'
 import SectionHeader from './SectionHeader.jsx'
 import LogoTile from './LogoTile.jsx'
 import CertificateButton from './CertificateButton.jsx'
@@ -46,7 +46,7 @@ export default function Awards() {
   return (
     <section className="section section--alt" id="awards" aria-labelledby="awards-title" tabIndex={-1}>
       <div className="section__inner">
-        <SectionHeader code={codeOf('awards')} title={t('sections.awards')} id="awards-title" />
+        <SectionHeader num={numOf('awards')} title={t('sections.awards')} id="awards-title" />
         <ol className="awards">
           {newestFirst(awards).map((a) => <AwardRow key={a.id} a={a} />)}
         </ol>

@@ -1,9 +1,10 @@
 import { useTranslation } from 'react-i18next'
 
-// Pick the active language from a bilingual field { en, vi }. Plain strings pass through.
+// Read the English text of a data field ({ en } objects, or plain strings that pass through).
+// Older entries still carry a `vi` value; it is no longer shown.
 export function useLocalized() {
   const { t, i18n } = useTranslation()
-  const lang = i18n.language === 'vi' ? 'vi' : 'en'
+  const lang = 'en'
   const L = (field) => {
     if (field == null) return ''
     if (typeof field === 'string') return field

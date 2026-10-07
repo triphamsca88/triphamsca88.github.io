@@ -1,7 +1,7 @@
 import { useLocalized } from '../i18n/useLocalized.js'
 import education from '../data/education.js'
 import { newestFirst, formatRange } from '../utils/dates.js'
-import { codeOf } from '../sections.js'
+import { numOf } from '../sections.js'
 import SectionHeader from './SectionHeader.jsx'
 import { TimelineItem, Bullets } from './Timeline.jsx'
 import CertificateButton from './CertificateButton.jsx'
@@ -11,7 +11,7 @@ export default function Education() {
   return (
     <section className="section section--alt" id="education" aria-labelledby="education-title" tabIndex={-1}>
       <div className="section__inner">
-        <SectionHeader code={codeOf('education')} title={t('sections.education')} id="education-title" />
+        <SectionHeader num={numOf('education')} title={t('sections.education')} id="education-title" />
         <ol className="timeline">
           {newestFirst(education).map((e) => (
             <TimelineItem

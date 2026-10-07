@@ -1,7 +1,7 @@
 import { useLocalized } from '../i18n/useLocalized.js'
 import experience from '../data/experience.js'
 import { newestFirst, formatRange } from '../utils/dates.js'
-import { codeOf } from '../sections.js'
+import { numOf } from '../sections.js'
 import SectionHeader from './SectionHeader.jsx'
 import { TimelineItem, Bullets } from './Timeline.jsx'
 import CertificateButton from './CertificateButton.jsx'
@@ -11,9 +11,10 @@ export default function Experience() {
   return (
     <section className="section" id="experience" aria-labelledby="experience-title" tabIndex={-1}>
       <div className="section__inner">
-        <SectionHeader code={codeOf('experience')} title={t('sections.experience')} id="experience-title" />
+        <SectionHeader num={numOf('experience')} title={t('sections.experience')} id="experience-title" />
         <ol className="timeline">
-          {newestFirst(experience).map((x) => (
+          {/* Featured role first, then newest first */}
+          {[...newestFirst(experience)].sort((a, b) => Number(!!b.featured) - Number(!!a.featured)).map((x) => (
             <TimelineItem
               key={x.id}
               featured={x.featured}
@@ -32,22 +33,14 @@ export default function Experience() {
               )}
               {x.project && <p className="tl-project">{L(x.project)}</p>}
               <Bullets items={x.bullets.map(L)} />
-              {(x.kpis?.length > 0 || x.certificate) && (
+              {x.certificate && (
                 <div className="tl-actions">
-                  {x.kpis?.length > 0 && (
-                    <div className="kpi-chips">
-                      <span className="kpi-chips__label">{t('common.kpisBuilt')}</span>
-                      {x.kpis.map((k) => <span className="kpi-chip" key={k}>{k}</span>)}
-                    </div>
-                  )}
-                  {x.certificate && (
-                    <CertificateButton
+                  <CertificateButton
                       image={x.certificate.image}
                       alt={x.certificate.alt}
                       caption={`${L(x.title)}, ${x.org}`}
                       label={L(x.certificate.label)}
                     />
-                  )}
                 </div>
               )}
             </TimelineItem>

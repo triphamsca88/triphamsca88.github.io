@@ -16,7 +16,6 @@ const experience = [
       en: 'Project: Performance and Optimization Dashboard for barge fleet operations, running live within the Gemadept ecosystem.',
       vi: 'Dự án: Dashboard Hiệu suất và Tối ưu cho hoạt động đội sà lan, đang vận hành thực tế trong hệ sinh thái Gemadept.',
     },
-    kpis: ['Turnaround Time', 'OTP', 'Ballast Ratio'],
     bullets: [
       {
         en: 'Established the calculation logic for barge fleet operational KPIs (Turnaround Time, OTP, Ballast Ratio) from raw data to accurately measure inland waterway supply chain performance.',
@@ -50,9 +49,11 @@ const experience = [
     location: { en: 'Ho Chi Minh City', vi: 'TP. Hồ Chí Minh' },
     workType: { en: 'Part time, Hybrid', vi: 'Bán thời gian, Hybrid' },
     start: '2024-07',
-    end: '2025-12',
+    end: null, // ongoing
     bullets: [
-      { en: 'Supported English language teaching.', vi: 'Hỗ trợ giảng dạy tiếng Anh.' },
+      { en: 'Developed engaging lesson plans and interactive lecture slides to optimize classroom delivery and student engagement.' },
+      { en: 'Tutored foundational grammar for students, effectively bridging knowledge gaps to prepare them for high school entrance exams.' },
+      { en: 'Mentored candidates in IELTS Listening, providing targeted strategies and practice to maximize test scores.' },
     ],
   },
 ]

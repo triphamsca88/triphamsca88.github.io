@@ -2,7 +2,7 @@
 
 File này là nguồn sự thật cho mọi chữ, ngày tháng, mã chứng chỉ trên website. Mọi dữ kiện đã được đối chiếu từ CV, ảnh LinkedIn và file chứng chỉ gốc trong `_source/`. Khi CV và chứng chỉ gốc lệch nhau, ưu tiên chứng chỉ gốc. Các mục đánh dấu **[CẦN XÁC NHẬN]** chưa được dùng cho tới khi chủ portfolio xác nhận.
 
-Văn phong tiếng Anh giữ đúng như CV: không dùng dấu gạch nối hay gạch ngang để nối từ hoặc nối ý (viết "data driven", "real time", "end to end", "last mile"), khoảng thời gian viết bằng "to" (ví dụ "Apr 2026 to Jul 2026").
+Website chỉ có tiếng Anh (chủ portfolio bỏ bản tiếng Việt ngày 07 Oct 2026). Văn phong tiếng Anh giữ đúng như CV: không dùng dấu gạch nối hay gạch ngang để nối từ hoặc nối ý (viết "data driven", "real time", "end to end", "last mile"), khoảng thời gian viết bằng "to" (ví dụ "Apr 2026 to Jul 2026").
 
 ## 1. Thông tin chung
 
@@ -45,8 +45,10 @@ Third year Logistics Technology student with a proactive, improvement driven min
    * Analysed transaction data to identify bottlenecks, waste ratios and anomalies, supporting capacity optimisation and reducing the cargo rejection rate.
    * Produced detailed analysis reports and a User Guide that enabled the Barge Dispatch and Voyage Management teams to turn data into effective execution decisions.
    * Chứng nhận: `Certificate/COFANO CERTIFICATION.jpg` (Certificate of Participation, Internship Program, Project: Performance & Optimization Dashboard)
-2. **Teaching Assistant**, NP English Academy, Ho Chi Minh City, Part time, Hybrid, Jul 2024 to Dec 2025. Logo `NP.png`
-   * Nguồn: LinkedIn (không có trong CV). Mô tả ngắn: hỗ trợ giảng dạy tiếng Anh. **[CẦN XÁC NHẬN]** câu mô tả chi tiết nếu muốn thêm.
+2. **Teaching Assistant**, NP English Academy, Ho Chi Minh City, Part time, Hybrid, Jul 2024 to Present. Logo `NP.png`
+   * Developed engaging lesson plans and interactive lecture slides to optimize classroom delivery and student engagement.
+   * Tutored foundational grammar for students, effectively bridging knowledge gaps to prepare them for high school entrance exams.
+   * Mentored candidates in IELTS Listening, providing targeted strategies and practice to maximize test scores.
 
 ## 4. Leadership and activities
 
@@ -54,16 +56,16 @@ Third year Logistics Technology student with a proactive, improvement driven min
    * Vice Head of Academy Department, Vietnam Supply Chain Challenge 2027, Aug 2026 to Sep 2026: directed Business Case formulation and executed data quality checks for a national logistics competition; coordinated collaboration across departments to secure strategic sponsorships and onboard industry experts as mentors and panel judges.
    * Organising Committee, Planning and Academy Department, VSCC Internal Competition (VIC), Part time, Aug 2026 to Sep 2026: designed the overall framework, competition format and rulebook for the VSCC Internal Case; directed event planning from end to end, from venue sourcing and timelines to onsite operations.
    * Member of Operations Department, Part time, May 2026 to Jul 2026: developed timelines, allocated resources and coordinated end to end event operations to ensure timely delivery.
-2. **Project Coordinator**, Kindnom Volunteer Club (VNV), Mầm Thương Project
+2. **Project Coordinator**, Kindnom Volunteer Club (VNV), Mầm Thương Project, Mar 2026
    * Managed planning, budgeting and risk mitigation for charity projects; organised scholarship award ceremonies.
-   * Logo `LOGO-VNV.png` (Cộng Đồng Tình Nguyện Việt Nam). **[CẦN XÁC NHẬN]** thời gian tham gia.
+   * Logo `LOGO-VNV.png` (Cộng Đồng Tình Nguyện Việt Nam).
 
 ## 5. Skills
 
 * Data Analytics: SQL (MySQL), Power BI, Advanced Excel (Pivot Tables, XLOOKUP, Power Query, DAX), Python (basic, từ Google Data Analytics)
 * Supply Chain: End to End Supply Chain Overview, Demand Forecasting, S&OP, Inventory Management, Lean Six Sigma, Network Optimisation, MPS/MRP, Vehicle Routing
 * Soft skills: Project Management, Risk Management, Stakeholder Management, Team Coordination, Problem Solving, Planning and Execution
-* Languages: English (IELTS Academic 7.5, CEFR C1), Vietnamese (Native)
+* Languages: English (IELTS Academic 7.5, CEFR C1; Listening 7.5, Reading 7.5, Writing 6.5, Speaking 7.5)
 
 ## 6. Honors and awards
 

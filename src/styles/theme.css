@@ -1,6 +1,6 @@
 /* Design tokens: Pham Duc Tri portfolio (see CLAUDE.md).
-   Google Fonts (Sora, Be Vietnam Pro, JetBrains Mono, display=swap) are loaded with
-   <link rel="preconnect"> + <link rel="stylesheet"> in index.html so they never block CSS parsing. */
+   Lexend (Google Fonts, includes Vietnamese glyphs, display=swap) is loaded without blocking
+   rendering from index.html. One family for headings, text and figures keeps the page calm. */
 
 :root {
   /* Palette from CLAUDE.md */
@@ -25,9 +25,9 @@
   --route: rgba(10, 122, 112, 0.45); /* dashed route lines on light grounds */
   --white: #FFFFFF;
 
-  --font-heading: 'Sora', 'Segoe UI', system-ui, -apple-system, sans-serif;
-  --font-body: 'Be Vietnam Pro', 'Segoe UI', system-ui, -apple-system, sans-serif;
-  --font-mono: 'JetBrains Mono', ui-monospace, 'Cascadia Mono', Consolas, monospace;
+  --font-heading: 'Lexend', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --font-body: 'Lexend', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --font-mono: 'Lexend', 'Segoe UI', system-ui, sans-serif; /* labels and figures use tabular numerals, not a monospace face */
 
   --sidebar-w: 288px;
   --topbar-h: 64px;

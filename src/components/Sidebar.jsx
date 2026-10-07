@@ -5,7 +5,6 @@ import profile from '../data/profile.js'
 import { asset } from '../utils/asset.js'
 import RouteNav from './RouteNav.jsx'
 import ContactIcons from './ContactIcons.jsx'
-import LangSwitch from './LangSwitch.jsx'
 import { useScrollSpy } from '../hooks/useScrollSpy.js'
 import { SECTION_IDS } from '../sections.js'
 
@@ -53,7 +52,6 @@ export default function Sidebar() {
         <RouteNav active={active} />
         <div className="sidebar__foot">
           <ContactIcons />
-          <LangSwitch />
         </div>
       </aside>
 
@@ -81,7 +79,6 @@ export default function Sidebar() {
           <RouteNav active={active} onNavigate={() => setOpen(false)} />
           <div className="sidebar__foot">
             <ContactIcons />
-            <LangSwitch />
           </div>
         </div>
       )}

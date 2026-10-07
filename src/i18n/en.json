@@ -17,10 +17,6 @@
     "primary": "Sections",
     "skip": "Skip to content"
   },
-  "lang": {
-    "label": "Language",
-    "switchTo": "Switch to Vietnamese"
-  },
   "contact": {
     "email": "Email",
     "linkedin": "LinkedIn",
@@ -62,7 +58,7 @@
     "latest": "Latest role",
     "latestValue": "Supply Chain Analyst Intern, Cofano Asia",
     "languages": "Languages",
-    "languagesValue": "English (C1), Vietnamese (Native)",
+    "languagesValue": "English (IELTS 7.5, CEFR C1)",
     "gpa": "GPA",
     "glance": "At a glance",
     "email": "Email",
@@ -75,7 +71,6 @@
     "verify": "Verify",
     "close": "Close",
     "project": "Project",
-    "kpisBuilt": "KPIs built",
     "roles": "{{count}} roles",
     "credentialId": "Credential ID",
     "issued": "Issued",
@@ -93,7 +88,7 @@
   },
   "projects": {
     "status": "In transit",
-    "title": "In transit: projects arriving soon",
+    "title": "Projects arriving soon",
     "body": "Project case studies will be published here as they are completed.",
     "problem": "Problem",
     "approach": "Approach",
@@ -112,6 +107,7 @@
   "skills": {
     "count": "{{count}} skills",
     "tools": "{{count}} tools",
-    "languages": "{{count}} languages"
+    "languages": "English proficiency",
+    "overall": "{{test}} overall, out of 9"
   }
 }

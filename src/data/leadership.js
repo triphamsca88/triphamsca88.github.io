@@ -57,8 +57,8 @@ const leadership = [
       {
         title: { en: 'Project Coordinator', vi: 'Điều phối viên Dự án' },
         context: { en: 'Mầm Thương Project', vi: 'Dự án Mầm Thương' },
-        start: '', // [CẦN XÁC NHẬN] dates not provided yet
-        end: '',
+        start: '2026-03',
+        end: '2026-03',
         description: {
           en: 'Managed planning, budgeting and risk mitigation for charity projects; organised scholarship award ceremonies.',
           vi: 'Quản lý lập kế hoạch, ngân sách và giảm thiểu rủi ro cho các dự án thiện nguyện; tổ chức các lễ trao học bổng.',

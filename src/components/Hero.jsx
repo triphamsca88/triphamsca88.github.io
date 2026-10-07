@@ -24,10 +24,6 @@ export default function Hero() {
         <div className="hero__panel">
           <span className="hero__eyebrow">{t('hero.greeting')}</span>
           <h1 className="hero__name" id="hero-name">{profile.name}</h1>
-          <p className="hero__role">
-            <span className="hero__role-title">{L(profile.title)}</span>
-            <span className="hero__role-sub">{L(profile.tagline)}</span>
-          </p>
           <p className="hero__intro">{L(profile.intro)}</p>
           <div className="hero__actions">
             <a className="btn btn--primary" href="#about" onClick={go('about')}>

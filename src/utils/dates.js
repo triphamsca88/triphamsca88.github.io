@@ -16,6 +16,7 @@ export function formatDate(iso, lang = 'en') {
 // "Apr 2026 to Jul 2026", "Aug 2024 to Present"
 export function formatRange(start, end, lang, t) {
   if (!start && !end) return ''
+  if (start && start === end) return formatDate(start, lang)
   const from = formatDate(start, lang)
   const to = end ? formatDate(end, lang) : t('common.present')
   return from ? `${from} ${t('common.to')} ${to}` : to

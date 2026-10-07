@@ -1,10 +1,10 @@
 # Pham Duc Tri · Portfolio
 
 Personal portfolio of Pham Duc Tri, Supply Chain Analyst Intern and Logistics Technology student at UEH.
-Live at **https://triphamsca88.github.io/** (English and Vietnamese).
+Live at **https://triphamsca88.github.io/**.
 
-Built with React, Vite and react-i18next. The English page is prerendered at build time so content
-paints before JavaScript loads, then hydrates in the browser.
+Built with React and Vite, set in Lexend. The page is prerendered at build time so content paints before
+JavaScript loads, then hydrates in the browser.
 
 ## Run locally
 
@@ -30,9 +30,9 @@ All text lives in data files, so updates rarely touch components.
 | Certifications | `src/data/certificates.js` |
 | Honors and awards | `src/data/awards.js` |
 | Projects (the "In transit" card hides itself once this has an item) | `src/data/projects.js` |
-| Interface labels | `src/i18n/en.json`, `src/i18n/vi.json` |
+| Interface labels | `src/i18n/en.json` |
 
-Text fields are bilingual: `{ en: '...', vi: '...' }`. Dates use ISO strings (`'2026-04'` or `'2026-04-17'`);
+Text fields use `{ en: '...' }` (older entries may still carry an unused `vi` value). Dates use ISO strings (`'2026-04'` or `'2026-04-17'`);
 lists sort newest first automatically and the certificate and award counts on the KPI strip are derived from data.
 Leave `logo`, `image`, `credentialId` or `verifyUrl` empty and that part of the card is hidden.
 

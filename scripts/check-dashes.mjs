@@ -23,7 +23,7 @@ for (const f of dataFiles) {
   const mod = await import(new URL(`../src/data/${f}.js`, import.meta.url))
   walk(mod.default, f)
 }
-for (const f of ['en', 'vi']) walk(JSON.parse(readFileSync(new URL(`../src/i18n/${f}.json`, import.meta.url))), f)
+for (const f of ['en']) walk(JSON.parse(readFileSync(new URL(`../src/i18n/${f}.json`, import.meta.url))), f)
 
 if (hits.length) {
   console.log(hits.join('\n'))

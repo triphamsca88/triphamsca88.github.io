@@ -1,7 +1,7 @@
 // Source of truth: NOI_DUNG_PORTFOLIO.md, section 5.
 // `icon` on a group maps to a lucide icon in components/Skills.jsx;
 // `icon` on a tool maps to a small brand style mark in components/ToolIcon.jsx.
-// Language `cefr` positions the level on the A1 to C2 scale ('native' fills it).
+// Languages show the CEFR level and IELTS band scores (out of 9).
 
 const skills = [
   {
@@ -55,19 +55,19 @@ const skills = [
     title: { en: 'Languages', vi: 'Ngôn ngữ' },
     items: [
       {
-        name: { en: 'English', vi: 'Tiếng Anh' },
-        detail: { en: 'IELTS Academic 7.5, CEFR C1', vi: 'IELTS Academic 7.5, CEFR C1' },
+        name: { en: 'English' },
         cefr: 'C1',
-      },
-      {
-        name: { en: 'Vietnamese', vi: 'Tiếng Việt' },
-        detail: { en: 'Native', vi: 'Bản ngữ' },
-        cefr: 'native',
+        test: 'IELTS Academic',
+        overall: 7.5,
+        bands: [
+          { label: 'Listening', score: 7.5 },
+          { label: 'Reading', score: 7.5 },
+          { label: 'Writing', score: 6.5 },
+          { label: 'Speaking', score: 7.5 },
+        ],
       },
     ],
   },
 ]
-
-export const CEFR_LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']
 
 export default skills

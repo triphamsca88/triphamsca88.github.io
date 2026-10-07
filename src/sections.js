@@ -1,19 +1,19 @@
-// Section order, anchors and shipment style codes shown above each heading.
+// Section order, anchors and the two digit number shown beside each heading.
 export const SECTIONS = [
-  { id: 'about', code: '01 · ABOUT' },
-  { id: 'education', code: '02 · EDUCATION' },
-  { id: 'experience', code: '03 · EXPERIENCE' },
-  { id: 'leadership', code: '04 · LEADERSHIP & ACTIVITIES' },
-  { id: 'skills', code: '05 · SKILLS' },
-  { id: 'projects', code: '06 · PROJECTS' },
-  { id: 'certifications', code: '07 · CERTIFICATIONS' },
-  { id: 'awards', code: '08 · HONORS & AWARDS' },
+  { id: 'about', num: '01' },
+  { id: 'education', num: '02' },
+  { id: 'experience', num: '03' },
+  { id: 'leadership', num: '04' },
+  { id: 'skills', num: '05' },
+  { id: 'projects', num: '06' },
+  { id: 'certifications', num: '07' },
+  { id: 'awards', num: '08' },
 ]
 
 export const SECTION_IDS = SECTIONS.map((s) => s.id)
 
-export function codeOf(id) {
-  return SECTIONS.find((s) => s.id === id)?.code ?? ''
+export function numOf(id) {
+  return SECTIONS.find((s) => s.id === id)?.num ?? ''
 }
 
 // Smooth scroll that also works inside sandboxed frames where hash navigation may be restricted.

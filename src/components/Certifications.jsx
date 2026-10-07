@@ -4,7 +4,7 @@ import { useLocalized } from '../i18n/useLocalized.js'
 import certificates, { CERT_CATEGORIES } from '../data/certificates.js'
 import { newestFirst, formatDate } from '../utils/dates.js'
 import { asset } from '../utils/asset.js'
-import { codeOf } from '../sections.js'
+import { numOf } from '../sections.js'
 import SectionHeader from './SectionHeader.jsx'
 import LogoTile from './LogoTile.jsx'
 import { useLightbox } from './Lightbox.jsx'
@@ -95,7 +95,7 @@ export default function Certifications() {
   return (
     <section className="section" id="certifications" aria-labelledby="certifications-title" tabIndex={-1}>
       <div className="section__inner">
-        <SectionHeader code={codeOf('certifications')} title={t('sections.certifications')} id="certifications-title" />
+        <SectionHeader num={numOf('certifications')} title={t('sections.certifications')} id="certifications-title" />
         <div className="filters" role="group" aria-label={t('filters.label')}>
           {CERT_CATEGORIES.filter((k) => counts[k]).map((key) => (
             <button key={key} type="button" className="filter-chip" aria-pressed={filter === key} onClick={() => choose(key)}>

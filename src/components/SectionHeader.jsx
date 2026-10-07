@@ -1,9 +1,11 @@
-// Section heading with a mono shipment style code, for example "01 · ABOUT".
-export default function SectionHeader({ code, title, id }) {
+// Section heading: a small route number beside the title, for example "04  Leadership & Activities".
+export default function SectionHeader({ num, title, id }) {
   return (
     <header className="section-head">
-      <span className="section-head__code" aria-hidden="true">{code}</span>
-      <h2 className="section-head__title" id={id}>{title}</h2>
+      <h2 className="section-head__title" id={id}>
+        <span className="section-head__num" aria-hidden="true">{num}</span>
+        <span>{title}</span>
+      </h2>
     </header>
   )
 }

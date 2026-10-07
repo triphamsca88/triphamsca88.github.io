@@ -1,7 +1,7 @@
 import { useLocalized } from '../i18n/useLocalized.js'
 import leadership from '../data/leadership.js'
 import { newestFirst, formatRange } from '../utils/dates.js'
-import { codeOf } from '../sections.js'
+import { numOf } from '../sections.js'
 import SectionHeader from './SectionHeader.jsx'
 import { TimelineItem } from './Timeline.jsx'
 
@@ -18,7 +18,7 @@ export default function Leadership() {
   return (
     <section className="section section--alt" id="leadership" aria-labelledby="leadership-title" tabIndex={-1}>
       <div className="section__inner">
-        <SectionHeader code={codeOf('leadership')} title={t('sections.leadership')} id="leadership-title" />
+        <SectionHeader num={numOf('leadership')} title={t('sections.leadership')} id="leadership-title" />
         <ol className="timeline">
           {orgs.map((o) => {
             const range = formatRange(o.start, o.end, lang, t)

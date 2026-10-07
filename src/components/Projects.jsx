@@ -3,7 +3,7 @@ import { useLocalized } from '../i18n/useLocalized.js'
 import projects from '../data/projects.js'
 import { newestFirst } from '../utils/dates.js'
 import { asset } from '../utils/asset.js'
-import { codeOf } from '../sections.js'
+import { numOf } from '../sections.js'
 import SectionHeader from './SectionHeader.jsx'
 import { GitHubIcon } from './BrandIcon.jsx'
 
@@ -79,7 +79,7 @@ export default function Projects() {
   return (
     <section className="section section--alt" id="projects" aria-labelledby="projects-title" tabIndex={-1}>
       <div className="section__inner">
-        <SectionHeader code={codeOf('projects')} title={t('sections.projects')} id="projects-title" />
+        <SectionHeader num={numOf('projects')} title={t('sections.projects')} id="projects-title" />
         {projects.length === 0 ? (
           <InTransit />
         ) : (

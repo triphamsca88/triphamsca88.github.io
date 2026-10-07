@@ -4,7 +4,7 @@ import { useLocalized } from '../i18n/useLocalized.js'
 import profile from '../data/profile.js'
 import { asset } from '../utils/asset.js'
 import SectionHeader from './SectionHeader.jsx'
-import { codeOf } from '../sections.js'
+import { numOf } from '../sections.js'
 import { FacebookIcon, GitHubIcon, LinkedInIcon } from './BrandIcon.jsx'
 
 function CopyEmail() {
@@ -47,7 +47,7 @@ export default function About() {
   return (
     <section className="section section--first" id="about" aria-labelledby="about-title" tabIndex={-1}>
       <div className="section__inner">
-        <SectionHeader code={codeOf('about')} title={t('sections.about')} id="about-title" />
+        <SectionHeader num={numOf('about')} title={t('sections.about')} id="about-title" />
         <div className="about">
           <p className="about__lead">{L(profile.summary)}</p>
           <aside className="glance" aria-labelledby="glance-title">
