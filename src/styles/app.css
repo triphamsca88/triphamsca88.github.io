@@ -105,6 +105,20 @@ ul { margin: 0; padding: 0; }
 .icon-btn:hover { color: var(--navy-900); background: var(--teal-500); border-color: var(--teal-500); transform: translateY(-2px); }
 .icon-btn svg { width: 18px; height: 18px; }
 
+/* View CV: opens the public PDF in a new tab */
+.cv-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  font-weight: 500; font-size: 0.9rem; line-height: 1; text-decoration: none; white-space: nowrap;
+  color: var(--white); border: 1.5px solid rgba(46, 196, 182, 0.6); border-radius: 999px;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+.cv-btn svg { width: 16px; height: 16px; flex: none; }
+.cv-btn:hover { background: var(--teal-500); border-color: var(--teal-500); color: var(--navy-900); }
+.cv-btn--full { width: 100%; padding: 11px 16px; }
+.cv-btn__arrow { width: 14px !important; height: 14px !important; opacity: 0.7; }
+.cv-btn--compact { height: 40px; padding: 0 14px; font-size: 0.85rem; }
+.cv-btn--footer { height: 40px; padding: 0 16px; font-size: 0.86rem; }
+
 /* Mobile top bar (hidden on desktop) */
 .topbar { display: none; }
 
@@ -509,6 +523,7 @@ ul { margin: 0; padding: 0; }
   .topbar__name { font-family: var(--font-heading); font-weight: 700; font-size: 1rem; white-space: nowrap; }
   .topbar__role { font-family: var(--font-heading); font-size: 0.74rem; font-weight: 600; color: var(--teal-500); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .topbar__brand > div { min-width: 0; display: flex; flex-direction: column; }
+  .topbar__actions { display: flex; align-items: center; gap: 10px; flex: none; }
   .menu-btn {
     width: 44px; height: 44px; border-radius: 10px; flex: none; cursor: pointer;
     display: grid; place-items: center; color: var(--white);

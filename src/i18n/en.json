@@ -94,5 +94,10 @@
   "skills": {
     "overall": "{{test}} overall band",
     "bands": "{{test}} band scores"
+  },
+  "cv": {
+    "label": "View CV",
+    "short": "CV",
+    "aria": "Open my CV (PDF) in a new tab"
   }
 }

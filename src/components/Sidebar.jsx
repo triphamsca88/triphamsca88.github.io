@@ -5,6 +5,7 @@ import profile from '../data/profile.js'
 import { asset } from '../utils/asset.js'
 import RouteNav from './RouteNav.jsx'
 import ContactIcons from './ContactIcons.jsx'
+import CvButton from './CvButton.jsx'
 import { useScrollSpy } from '../hooks/useScrollSpy.js'
 import { SECTION_IDS } from '../sections.js'
 
@@ -51,6 +52,7 @@ export default function Sidebar() {
         </div>
         <RouteNav active={active} />
         <div className="sidebar__foot">
+          <CvButton />
           <ContactIcons />
         </div>
       </aside>
@@ -63,6 +65,8 @@ export default function Sidebar() {
             <span className="topbar__role">{L(profile.title)}</span>
           </div>
         </a>
+        <div className="topbar__actions">
+        <CvButton variant="compact" />
         <button
           type="button"
           className="menu-btn"
@@ -73,6 +77,7 @@ export default function Sidebar() {
         >
           {open ? <X aria-hidden="true" /> : <Menu aria-hidden="true" />}
         </button>
+        </div>
       </header>
       {open && (
         <div className="mobile-menu" id="mobile-menu">
