@@ -61,7 +61,7 @@ export default function About() {
                     <LinkedInIcon /> LinkedIn <ArrowUpRight aria-hidden="true" />
                   </a>
                   <a className="inline-link" href={profile.github} target="_blank" rel="noopener noreferrer">
-                    <GitHubIcon /> github.com/triphamsca88 <ArrowUpRight aria-hidden="true" />
+                    <GitHubIcon /> GitHub <ArrowUpRight aria-hidden="true" />
                   </a>
                 </dd>
               </div>

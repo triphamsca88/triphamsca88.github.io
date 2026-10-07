@@ -66,7 +66,7 @@ ul { margin: 0; padding: 0; }
   --c: var(--teal-500);
   display: inline-flex; align-items: center; gap: 8px;
   font-family: var(--font-mono); font-weight: 500; font-size: 0.66rem; letter-spacing: 0.07em;
-  text-transform: uppercase; color: var(--on-navy); line-height: 1.35; white-space: nowrap;
+  text-transform: uppercase; color: var(--on-navy); line-height: 1.45; text-align: center; text-wrap: balance; max-width: 100%;
   padding: 7px 12px;
   border: 1px solid rgba(46, 196, 182, 0.55);
   background:
@@ -285,7 +285,7 @@ ul { margin: 0; padding: 0; }
 .tl-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; margin-top: 18px; }
 
 .badge-live {
-  display: inline-flex; align-items: center; gap: 8px; margin-bottom: 12px;
+  display: inline-flex; align-items: center; gap: 8px; margin-top: 14px;
   font-family: var(--font-mono); font-size: 0.7rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase;
   color: var(--teal-700); background: rgba(46, 196, 182, 0.13); border: 1px solid rgba(10, 122, 112, 0.25);
   padding: 5px 12px 5px 10px; border-radius: 999px;
@@ -297,7 +297,8 @@ ul { margin: 0; padding: 0; }
 }
 @keyframes ping { 0% { transform: scale(0.6); opacity: 0.9; } 100% { transform: scale(1.6); opacity: 0; } }
 
-.kpi-chips { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 16px; }
+.kpi-chips { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.tl-actions { justify-content: space-between; }
 .kpi-chips__label { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-right: 4px; }
 .kpi-chip {
   font-family: var(--font-mono); font-size: 0.78rem; font-weight: 500; color: var(--white);

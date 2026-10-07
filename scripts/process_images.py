@@ -172,6 +172,16 @@ def process_logos(rows):
         img.save(dest, "WEBP", lossless=True, method=6)
         rows.append((f"Logo/{src_name}", f"img/logo/{dest.name}", f"{img.width}x{img.height}", dest.stat().st_size))
 
+    # Square mark for wide wordmarks, so they stay legible inside small square tiles.
+    for src_name, out_name, x_end in (("COFANO.png", "cofano_mark", 610),):
+        img = Image.open(SRC / "Logo" / src_name).convert("RGBA")
+        img = img.crop((0, 0, x_end, img.height))
+        img = img.crop(img.getchannel("A").getbbox())
+        img.thumbnail((256, 256), Image.LANCZOS)
+        dest = out_dir / f"{out_name}.webp"
+        img.save(dest, "WEBP", lossless=True, method=6)
+        rows.append((f"Logo/{src_name} (mark)", f"img/logo/{dest.name}", f"{img.width}x{img.height}", dest.stat().st_size))
+
 
 def process_certs(rows):
     for src_name, folder, out_name in CERTS:

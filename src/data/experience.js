@@ -6,7 +6,7 @@ const experience = [
     featured: true,
     title: { en: 'Supply Chain Analyst Intern', vi: 'Thực tập sinh Phân tích Chuỗi cung ứng' },
     org: 'Cofano Software Solutions Asia (Cofano Asia)',
-    logo: 'img/logo/cofano.webp',
+    logo: 'img/logo/cofano_mark.webp',
     location: { en: 'Binh Thanh, Ho Chi Minh City', vi: 'Bình Thạnh, TP. Hồ Chí Minh' },
     workType: { en: 'Hybrid', vi: 'Hybrid' },
     start: '2026-04',

@@ -7,7 +7,7 @@ export function formatDate(iso, lang = 'en') {
   const [y, m, d] = iso.split('-')
   if (!m) return y
   if (lang === 'vi') {
-    return d ? `${d}/${m}/${y}` : `Tháng ${Number(m)}/${y}`
+    return d ? `${d}/${m}/${y}` : `${m}/${y}`
   }
   const month = MONTHS_EN[Number(m) - 1]
   return d ? `${d} ${month} ${y}` : `${month} ${y}`

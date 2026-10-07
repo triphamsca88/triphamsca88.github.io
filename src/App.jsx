@@ -2,6 +2,9 @@ import Sidebar from './components/Sidebar.jsx'
 import Hero from './components/Hero.jsx'
 import KpiStrip from './components/KpiStrip.jsx'
 import About from './components/About.jsx'
+import Education from './components/Education.jsx'
+import Experience from './components/Experience.jsx'
+import Leadership from './components/Leadership.jsx'
 import { LightboxProvider } from './components/Lightbox.jsx'
 import { useScrollSpy } from './hooks/useScrollSpy.js'
 import { SECTION_IDS } from './sections.js'
@@ -19,6 +22,9 @@ export default function App() {
         <KpiStrip />
         <main id="main" tabIndex={-1}>
           <About />
+          <Education />
+          <Experience />
+          <Leadership />
         </main>
       </div>
     </LightboxProvider>
