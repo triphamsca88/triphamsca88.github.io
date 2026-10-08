@@ -33,10 +33,9 @@ const profile = {
     { text: 'Supply Chain Analyst', tone: 'strong' },
     { text: 'optimal decision making', tone: 'accent' },
   ],
-  // Short line for the hero, the closing sentence of the Summary verbatim.
+  // Hero intro, written and approved by the owner (2026-10-08); the About section keeps the CV summary.
   intro: {
-    en: 'Aiming to become a Supply Chain Analyst who uses data to support optimal decision making in demand forecasting, inventory management, process streamlining and operational efficiency.',
-    vi: 'Mục tiêu trở thành Supply Chain Analyst dùng dữ liệu để hỗ trợ ra quyết định tối ưu trong dự báo nhu cầu, quản trị tồn kho, tinh gọn quy trình và nâng cao hiệu quả vận hành.',
+    en: 'Supply chain analytics student focused on demand planning, inventory management and logistics performance, combining data driven decisions with a Lean Six Sigma approach to process improvement.',
   },
   // KPI strip. Awards and certificates are counted from data, never hard coded.
   gpa: { value: 3.89, decimals: 2, suffix: '/4.00', note: '9.1/10' },

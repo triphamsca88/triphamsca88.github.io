@@ -18,6 +18,10 @@ Website chỉ có tiếng Anh (chủ portfolio bỏ bản tiếng Việt ngày 0
 
 Third year Logistics Technology student with a proactive, improvement driven mindset and a solid foundation in supply chain data analytics. Completed a four month internship at Cofano, contributing to a performance analytics dashboard for barge fleet operations that now runs in live operation within the Gemadept ecosystem. Aiming to become a Supply Chain Analyst who uses data to support optimal decision making in demand forecasting, inventory management, process streamlining and operational efficiency.
 
+### Câu giới thiệu trên hero (chủ portfolio duyệt ngày 08 Oct 2026)
+
+Supply chain analytics student focused on demand planning, inventory management and logistics performance, combining data driven decisions with a Lean Six Sigma approach to process improvement.
+
 ### Dải số liệu nổi bật (KPI strip)
 
 * GPA 3.89/4.00 (9.1/10)
