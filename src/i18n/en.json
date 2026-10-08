@@ -59,10 +59,11 @@
     "verify": "Verify",
     "close": "Close",
     "project": "Project",
-    "roles": "{{count}} roles",
     "issued": "Issued",
     "openImage": "Open certificate image",
-    "escHint": "Press Esc to close"
+    "escHint": "Press Esc to close",
+    "roles_one": "{{count}} role",
+    "roles_other": "{{count}} roles"
   },
   "filters": {
     "label": "Filter certifications",

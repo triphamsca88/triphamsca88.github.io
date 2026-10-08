@@ -22,17 +22,7 @@ export default function Leadership() {
         <ol className="timeline">
           {orgs.map((o) => {
             const range = formatRange(o.start, o.end, lang, t)
-            if (o.roles.length === 1) {
-              const r = o.roles[0]
-              return (
-                <TimelineItem key={o.id} logo={o.logo} logoName={o.org} title={L(r.title)} org={o.org}
-                  workType={L(r.workType)} date={range}>
-                  {r.context && <p className="tl-sub">{L(r.context)}</p>}
-                  <ul className="bullets"><li>{L(r.description)}</li></ul>
-                </TimelineItem>
-              )
-            }
-            // Several roles: grouped under one organisation, the way LinkedIn shows them.
+            // Every organisation uses the same layout: name on top, its roles listed beneath (like LinkedIn).
             return (
               <TimelineItem key={o.id} logo={o.logo} logoName={o.org} title={o.org}
                 workType={t('common.roles', { count: o.roles.length })} date={range}>

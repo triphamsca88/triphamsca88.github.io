@@ -80,12 +80,12 @@ const leadership = [
   },
   {
     id: 'kindnom',
-    org: 'Kindnom Volunteer Club (VNV)',
+    org: 'Cộng Đồng Tình Nguyện Việt Nam (VNV)',
     logo: 'img/logo/vnv.webp',
     roles: [
       {
         title: { en: 'Project Coordinator', vi: 'Điều phối viên Dự án' },
-        context: { en: 'Mầm Thương Project', vi: 'Dự án Mầm Thương' },
+        context: { en: 'Mầm Thương Project, Kindnom Volunteer Club' },
         start: '2026-03',
         end: '2026-03',
         description: {

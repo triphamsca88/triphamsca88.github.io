@@ -63,7 +63,7 @@ Supply chain analytics student focused on demand planning, inventory management 
 2. **LSMSE (Sunflower Mission)**. Logo `LSMSE.png`
    * Project Leader, Scholarship Award Ceremony 2025 to 2026, Oct 2025 to May 2026: managed end to end planning, budgeting and task allocation across the Design, Logistics and Content departments; directed event operations, from venue sourcing and onsite technical control to risk mitigation; facilitated stakeholder relations by preparing recipient certificates and coordinating online attendance for international alumni and guests.
    * Logistics Team Lead, Ba Lô Ba Miền 2025, Phan Thiet, Jul 2025 to Aug 2025: directed logistics operations and budget estimation for team building activities, covering equipment procurement, venue bookings and vendor management; formulated risk mitigation plans for weather and technical contingencies; coordinated event scripts to ensure seamless execution.
-3. **Project Coordinator**, Kindnom Volunteer Club (VNV), Mầm Thương Project, Mar 2026
+3. **Cộng Đồng Tình Nguyện Việt Nam (VNV)**: Project Coordinator, Mầm Thương Project (Kindnom Volunteer Club), Mar 2026
    * Managed planning, budgeting and risk mitigation for charity projects; organised scholarship award ceremonies.
    * Logo `LOGO-VNV.png` (Cộng Đồng Tình Nguyện Việt Nam).
 
