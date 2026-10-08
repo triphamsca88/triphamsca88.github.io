@@ -48,7 +48,9 @@ export default function Leadership() {
                         </div>
                         <span className="role__date">{formatRange(r.start, r.end, lang, t)}</span>
                       </div>
-                      <p>{L(r.description)}</p>
+                      {r.bullets?.length
+                        ? <ul className="bullets role__bullets">{r.bullets.map((b, j) => <li key={j}>{L(b)}</li>)}</ul>
+                        : <p>{L(r.description)}</p>}
                     </li>
                   ))}
                 </ol>

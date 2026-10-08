@@ -50,6 +50,35 @@ const leadership = [
     ],
   },
   {
+    id: 'lsmse',
+    org: 'LSMSE (Sunflower Mission)',
+    logo: 'img/logo/lsmse.webp',
+    roles: [
+      {
+        title: { en: 'Project Leader' },
+        context: { en: 'Scholarship Award Ceremony 2025 to 2026' },
+        start: '2025-11',
+        end: '2026-05',
+        bullets: [
+          { en: 'Managed end to end planning, budgeting and task allocation across the Design, Logistics and Content departments.' },
+          { en: 'Directed event operations, from venue sourcing and onsite technical control to risk mitigation.' },
+          { en: 'Facilitated stakeholder relations by preparing recipient certificates and coordinating online attendance for international alumni and guests.' },
+        ],
+      },
+      {
+        title: { en: 'Logistics Team Lead' },
+        context: { en: 'Ba Lô Ba Miền 2025, Phan Thiet' },
+        start: '', // [CẦN XÁC NHẬN] months not provided yet
+        end: '',
+        bullets: [
+          { en: 'Directed logistics operations and budget estimation for team building activities, covering equipment procurement, venue bookings and vendor management.' },
+          { en: 'Formulated risk mitigation plans for weather and technical contingencies.' },
+          { en: 'Coordinated event scripts to ensure seamless execution.' },
+        ],
+      },
+    ],
+  },
+  {
     id: 'kindnom',
     org: 'Kindnom Volunteer Club (VNV)',
     logo: 'img/logo/vnv.webp',

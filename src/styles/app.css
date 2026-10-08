@@ -284,6 +284,7 @@ ul { margin: 0; padding: 0; }
 .role__ctx { color: var(--muted); font-size: 0.88rem; }
 .role__date { font-family: var(--font-mono); font-size: 0.78rem; color: var(--navy-700); white-space: nowrap; }
 .role p { margin-top: 6px; }
+.role__bullets { margin-top: 8px; gap: 6px; }
 
 /* Logo tile with initials fallback */
 .logo-tile {
