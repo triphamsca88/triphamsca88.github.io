@@ -165,8 +165,9 @@ ul { margin: 0; padding: 0; }
 .kpi__cell + .kpi__cell { border-left: 1px solid var(--line); }
 .kpi__label {
   display: flex; align-items: center; gap: 8px;
-  font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted);
+  font-family: var(--font-mono); font-size: 0.76rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--teal-700);
 }
+.kpi__cell:nth-child(3) .kpi__label, .kpi__cell:nth-child(4) .kpi__label { color: var(--amber-700); }
 .kpi__dot { width: 7px; height: 7px; border-radius: 50%; background: var(--teal-500); box-shadow: 0 0 0 3px rgba(46, 196, 182, 0.18); }
 .kpi__cell:nth-child(3) .kpi__dot, .kpi__cell:nth-child(4) .kpi__dot { background: var(--amber-400); box-shadow: 0 0 0 3px rgba(244, 162, 89, 0.18); }
 .kpi__value { font-family: var(--font-mono); font-weight: 500; font-variant-numeric: tabular-nums; color: var(--navy-900); font-size: clamp(1.9rem, 3vw, 2.5rem); line-height: 1.05; }

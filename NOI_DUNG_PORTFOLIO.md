@@ -25,7 +25,7 @@ Supply chain analytics student focused on demand planning, inventory management 
 ### Dải số liệu nổi bật (KPI strip)
 
 * GPA 3.89/4.00 (9.1/10)
-* 4 month Supply Chain Analyst internship
+* 4 months, dòng mô tả "Industry work experience" (chủ portfolio đổi ngày 09 Oct 2026 để không lặp lại tên vị trí thực tập)
 * 5 honors and awards
 * Số chứng chỉ: tự đếm từ dữ liệu chứng chỉ, không viết cứng
 
