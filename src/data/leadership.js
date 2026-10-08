@@ -57,7 +57,7 @@ const leadership = [
       {
         title: { en: 'Project Leader' },
         context: { en: 'Scholarship Award Ceremony 2025 to 2026' },
-        start: '2025-11',
+        start: '2025-10',
         end: '2026-05',
         bullets: [
           { en: 'Managed end to end planning, budgeting and task allocation across the Design, Logistics and Content departments.' },
@@ -68,8 +68,8 @@ const leadership = [
       {
         title: { en: 'Logistics Team Lead' },
         context: { en: 'Ba Lô Ba Miền 2025, Phan Thiet' },
-        start: '', // [CẦN XÁC NHẬN] months not provided yet
-        end: '',
+        start: '2025-07',
+        end: '2025-08',
         bullets: [
           { en: 'Directed logistics operations and budget estimation for team building activities, covering equipment procurement, venue bookings and vendor management.' },
           { en: 'Formulated risk mitigation plans for weather and technical contingencies.' },
