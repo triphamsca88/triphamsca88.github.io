@@ -15,7 +15,7 @@ const awards = [
     },
     image: 'img/awards/ctd_scholars_2025.webp',
     thumb: 'img/awards/ctd_scholars_2025_thumb.webp',
-    alt: 'CTD Scholars Student Awards 2025 certificate, Second Prize, with personal details masked',
+    alt: 'CTD Scholars Student Awards 2025 certificate, Second Prize',
   },
   {
     id: 'scmission-2026',

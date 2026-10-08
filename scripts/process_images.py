@@ -75,11 +75,7 @@ REDACTIONS = {
     "ielts 7.5.jpg": [
         (176, 392, 456, 447),    # Candidate ID value
     ],
-    "CTDSCHOLARS.jpg": [
-        (180, 322, 290, 360),    # Date of birth value
-        (396, 322, 548, 352),    # Place of birth value, line 1
-        (412, 350, 548, 380),    # Place of birth value, line 2
-    ],
+    # CTDSCHOLARS.jpg: published unmasked (owner decision 2026-10-08).
 }
 
 
