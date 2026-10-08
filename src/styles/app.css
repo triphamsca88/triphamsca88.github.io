@@ -296,6 +296,9 @@ ul { margin: 0; padding: 0; }
 .logo-tile--initials { background: var(--navy-700); border-color: var(--navy-700); color: var(--teal-500); font-family: var(--font-mono); font-weight: 500; font-size: 0.9rem; letter-spacing: 0.06em; }
 .logo-tile--sm { width: 32px; height: 32px; border-radius: 8px; padding: 3px; }
 .logo-tile--sm.logo-tile--initials { font-size: 0.66rem; }
+/* Horizontal wordmarks keep the small tile height but take the width they need */
+.logo-tile--wide { width: auto; max-width: 132px; height: 32px; border-radius: 8px; padding: 4px 8px; }
+.logo-tile--wide img { width: auto; height: 100%; }
 
 /* Outline button used on light grounds */
 .btn-outline {

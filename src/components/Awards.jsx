@@ -23,7 +23,7 @@ function AwardRow({ a }) {
         <h3 className="award__title">{a.title}</h3>
         {a.theme && <p className="award__theme">{L(a.theme)}</p>}
         <p className="award__org">
-          <LogoTile src={a.logo} name={a.org} size="sm" />
+          <LogoTile src={a.logo} name={a.org} size={a.logoWide ? 'wide' : 'sm'} />
           <span>{a.org}</span>
         </p>
         <p className="award__desc">{L(a.description)}</p>

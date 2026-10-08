@@ -7,7 +7,7 @@ function initialsOf(name = '') {
 
 // Organisation logo; falls back to initials when no logo file exists yet.
 export default function LogoTile({ src, name, size }) {
-  const cls = `logo-tile${size === 'sm' ? ' logo-tile--sm' : ''}`
+  const cls = `logo-tile${size ? ` logo-tile--${size}` : ''}`
   if (!src) {
     return <span className={`${cls} logo-tile--initials`} aria-hidden="true">{initialsOf(name)}</span>
   }

@@ -7,7 +7,8 @@ const awards = [
     title: 'Student Scientific Research Award, CTD Scholars Student Awards 2025',
     theme: { en: 'Theme: Technology and Sustainable Development', vi: 'Chủ đề: Công nghệ và Phát triển bền vững' },
     org: 'Youth Union and Student Association of UEH, UEH College of Technology and Design',
-    logo: 'img/logo/ctd_scholars.webp',
+    logo: 'img/logo/ueh_ctd.webp',
+    logoWide: true, // horizontal wordmark
     date: '2026-04-17', // decision date on the certificate; award edition 2025
     description: {
       en: 'Research topic: Application of AI and IoT in Verifying the Transparency of Clean Food Supply Chains with Blockchain Technology Integration. Led the IoT and Data workstream; built a real time monitoring dashboard and a quantitative model to forecast product shelf life.',
@@ -56,7 +57,7 @@ const awards = [
       vi: 'Chủ đề: Chuyển đổi số cho tương lai cảng biển',
     },
     org: 'UMT University, with Consulate General of the Netherlands and Tan Cang STC',
-    logo: 'img/logo/umt_hackathon.webp',
+    logo: 'img/logo/snp.webp', // Saigon Newport, parent of Tan Cang STC
     date: '2025-11-11',
     description: {
       en: 'Pitched a data driven barge scheduling algorithm (BOE) to maximise fleet capacity utilisation and relieve port congestion, earning an early Supply Chain Intern offer from Cofano Software Solutions Asia.',

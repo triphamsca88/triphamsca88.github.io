@@ -40,10 +40,12 @@ LOGOS = {
     "hackathong UMT.jpg": "umt_hackathon",
     "scmission.png": "scmission",
     "LOGO-VNV.png": "vnv",
+    "SNP.png": "snp",
+    "UEH_CTD.png": "ueh_ctd",
 }
 
 # Logos delivered on an opaque white canvas: trim the white margin before resizing.
-TRIM_WHITE = {"LOGO-VNV.png"}
+TRIM_WHITE = {"LOGO-VNV.png", "SNP.png"}
 
 # (source file, output folder, output name)
 CERTS = [
