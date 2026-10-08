@@ -57,7 +57,7 @@ CERTS = [
     ("ielts 7.5.jpg", "certificates", "ielts_academic"),
     ("COFANO CERTIFICATION.jpg", "certificates", "cofano_internship"),
     ("EXCHANGE_RMUTL.jpg", "certificates", "rmutl_exchange"),
-    ("CTDSCHOLARS.jpg", "awards", "ctd_scholars_2025"),
+    ("CTDSCHOLARS.jpg", "awards", "ctd_scholars_2025_unmasked"),
     ("SCMISSION.jpg", "awards", "scmission_2026"),
     ("LASTMILE3I.jpg", "awards", "last_mile_optimizer_2025"),
     ("HACKATHONDIGIPORTUMT.jpg", "awards", "hackathon_digiport_2025"),

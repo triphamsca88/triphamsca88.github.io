@@ -13,8 +13,8 @@ const awards = [
       en: 'Research topic: Application of AI and IoT in Verifying the Transparency of Clean Food Supply Chains with Blockchain Technology Integration. Led the IoT and Data workstream; built a real time monitoring dashboard and a quantitative model to forecast product shelf life.',
       vi: 'Đề tài: Ứng dụng AI và IoT trong xác thực tính minh bạch của chuỗi cung ứng thực phẩm sạch tích hợp công nghệ Blockchain. Phụ trách mảng IoT và Dữ liệu; xây dựng dashboard giám sát theo thời gian thực và mô hình định lượng dự báo hạn sử dụng sản phẩm.',
     },
-    image: 'img/awards/ctd_scholars_2025.webp',
-    thumb: 'img/awards/ctd_scholars_2025_thumb.webp',
+    image: 'img/awards/ctd_scholars_2025_unmasked.webp',
+    thumb: 'img/awards/ctd_scholars_2025_unmasked_thumb.webp',
     alt: 'CTD Scholars Student Awards 2025 certificate, Second Prize',
   },
   {
