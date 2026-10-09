@@ -54,6 +54,7 @@ CERTS = [
     ("AI Google.pdf", "certificates", "google_ai_professional"),
     ("AIFORDA.pdf", "certificates", "google_ai_for_data_analysis"),
     ("DA Google.pdf", "certificates", "google_data_analytics"),
+    ("PM Google.pdf", "certificates", "google_project_management_foundations"),
     ("VILAS.pdf", "certificates", "vilas_supply_chain_essentials"),
     ("OR_NTU.pdf", "certificates", "ntu_operations_research"),
     ("ielts 7.5.jpg", "certificates", "ielts_academic"),

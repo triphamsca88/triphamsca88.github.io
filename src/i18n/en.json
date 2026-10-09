@@ -71,6 +71,7 @@
     "supply_chain": "Supply Chain",
     "data": "Data",
     "ai": "AI",
+    "management": "Management",
     "language": "Language",
     "showing": "Showing {{count}} of {{total}}"
   },
