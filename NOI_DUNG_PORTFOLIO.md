@@ -96,7 +96,7 @@ Ghi chú: LinkedIn ghi LSMSE là May 2025 nhưng chứng nhận ghi 19 Oct 2025,
 
 ## 7. Certifications
 
-Nhóm lọc: `supply_chain`, `data`, `ai`, `management`, `language`.
+Nhóm lọc: `supply_chain`, `data`, `ai` (hiển thị "AI & Management", chủ portfolio gộp ngày 10 Oct 2026), `language`.
 
 | # | Tên | Đơn vị cấp | Ngày | Mã | Link xác minh | File gốc | Nhóm |
 |---|---|---|---|---|---|---|---|
@@ -106,7 +106,7 @@ Nhóm lọc: `supply_chain`, `data`, `ai`, `management`, `language`.
 | 4 | Excel Supply Chain Analysis: Solving Inventory Problems | LinkedIn Learning | 06 Oct 2026 | 6aad65e6786848a8346b28d33fb2a6ad87874cc145c2f1672d8fbe89083ef5c3 | (chưa có) | `inventoryexcel.jpg` | supply_chain |
 | 5 | CSCMP Supply Chain Foundations: Demand Planning Professional Certificate | CSCMP via LinkedIn Learning | 28 Sep 2026 | e9ee14fc7c855512e06cca919a0476c0e5a8cb637feb2c64c5f247b7c8047c18 | (chưa có) | `CSCMP DEMAND PLANNING.jpg` | supply_chain |
 | 6 | Excel Data Analysis for Supply Chain: Forecasting | LinkedIn Learning | 28 Sep 2026 | ec8a71c6efc91d9efbda253835d6b2fb12c61e54a3a8824239e962f2a495a476 | (chưa có) | `forecasting excel.jpg` | supply_chain |
-| 7 | Foundations of Project Management | Google via Coursera | 10 Sep 2026 | XVGWBC9F4H99 | https://coursera.org/verify/XVGWBC9F4H99 | `PM Google.pdf` | management |
+| 7 | Foundations of Project Management | Google via Coursera | 10 Sep 2026 | XVGWBC9F4H99 | https://coursera.org/verify/XVGWBC9F4H99 | `PM Google.pdf` | ai |
 | 8 | Google AI Professional Certificate (7 courses) | Google via Coursera | 03 Aug 2026 | JWFHDMXMN2IA | https://coursera.org/verify/professional-cert/JWFHDMXMN2IA | `AI Google.pdf` | ai |
 | 9 | AI for Data Analysis | Google via Coursera | 03 Aug 2026 | 5UCZT4YL84UV | https://coursera.org/verify/5UCZT4YL84UV | `AIFORDA.pdf` | ai |
 | 10 | Google Data Analytics Professional Certificate (9 courses) | Google via Coursera | 01 Aug 2026 | FEVDUD12PM0I | https://coursera.org/verify/professional-cert/FEVDUD12PM0I | `DA Google.pdf` | data |
@@ -118,7 +118,7 @@ Nhóm lọc: `supply_chain`, `data`, `ai`, `management`, `language`.
 
 Logo tương ứng: LinkedIn Learning `Linkedin.png`, CSCMP `CSCMP.jpg`, Google `Google.webp`, Udemy `Udemy.png`, VILAS `VILAS.png`, Data Science Academy `Data Science Academy.png`, NTU `NTU.png`, IDP `IDP.jpg`.
 
-Chứng chỉ "Project Management (Google)" ghi trong CV: chủ portfolio gửi file ngày 10 Oct 2026 (Foundations of Project Management, khóa đầu tiên của Google Project Management), đã đưa lên web ở nhóm `management`.
+Chứng chỉ "Project Management (Google)" ghi trong CV: chủ portfolio gửi file ngày 10 Oct 2026 (Foundations of Project Management, khóa đầu tiên của Google Project Management), đã đưa lên web ở nhóm `ai` (AI & Management).
 
 ## 8. Projects
 

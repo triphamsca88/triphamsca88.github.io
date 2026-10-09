@@ -1,5 +1,5 @@
 // Source of truth: NOI_DUNG_PORTFOLIO.md, section 7.
-// category: 'supply_chain' | 'data' | 'ai' | 'management' | 'language'
+// category: 'supply_chain' | 'data' | 'ai' (shown as AI & Management) | 'language'
 // Empty image, credentialId or verifyUrl simply hides that part of the card.
 
 const LOGO = {
@@ -96,7 +96,7 @@ const certificates = [
     verifyUrl: 'https://coursera.org/verify/XVGWBC9F4H99',
     image: 'img/certificates/google_project_management_foundations.webp',
     thumb: 'img/certificates/google_project_management_foundations_thumb.webp',
-    category: 'management',
+    category: 'ai',
   },
   {
     id: 'google-ai',
@@ -196,6 +196,6 @@ const certificates = [
   },
 ]
 
-export const CERT_CATEGORIES = ['all', 'supply_chain', 'data', 'ai', 'management', 'language']
+export const CERT_CATEGORIES = ['all', 'supply_chain', 'data', 'ai', 'language']
 
 export default certificates

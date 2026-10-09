@@ -70,8 +70,7 @@
     "all": "All",
     "supply_chain": "Supply Chain",
     "data": "Data",
-    "ai": "AI",
-    "management": "Management",
+    "ai": "AI & Management",
     "language": "Language",
     "showing": "Showing {{count}} of {{total}}"
   },
