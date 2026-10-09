@@ -433,10 +433,16 @@ ul { margin: 0; padding: 0; }
 /* ---------- Awards ---------- */
 .awards { list-style: none; display: flex; flex-direction: column; }
 .award { display: grid; grid-template-columns: 150px minmax(0, 1fr) 190px; gap: 20px 28px; padding: 28px 0; align-items: start; }
-.award + .award { border-top: 1px solid var(--line-mist); }
-.award__rank { display: flex; flex-direction: column; gap: 4px; align-items: flex-start; padding-top: 2px; }
-.award__level { color: var(--amber-700); font-weight: 600; font-size: 1rem; line-height: 1.35; }
-.award__date { font-size: 0.85rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+.award + .award { border-top: 1px dashed var(--line-mist); }
+.award__rank { display: flex; flex-direction: column; gap: 10px; align-items: flex-start; }
+.rank-badge {
+  display: inline-flex; align-items: center; gap: 7px;
+  background: rgba(244, 162, 89, 0.16); color: var(--amber-700); border: 1px solid rgba(160, 86, 26, 0.22);
+  font-family: var(--font-mono); font-weight: 500; font-size: 0.74rem; letter-spacing: 0.06em; text-transform: uppercase; line-height: 1.3;
+  padding: 6px 11px; border-radius: 6px;
+}
+.rank-badge svg { width: 15px; height: 15px; flex: none; }
+.award__date { font-family: var(--font-mono); font-size: 0.8rem; color: var(--navy-700); }
 .award__title { font-size: 1.1rem; font-weight: 600; }
 .award__theme { color: var(--muted); font-size: 0.9rem; font-style: italic; margin-top: 4px; }
 .award__org { display: flex; align-items: center; gap: 10px; margin-top: 10px; color: var(--teal-700); font-weight: 600; font-size: 0.9rem; }
@@ -555,7 +561,7 @@ ul { margin: 0; padding: 0; }
   .section-head__num { width: 40px; height: 40px; font-size: 0.85rem; }
   .transit { grid-template-columns: minmax(0, 1fr); gap: 16px; }
   .award { grid-template-columns: minmax(0, 1fr); gap: 14px; }
-  .award__rank { flex-direction: row; align-items: baseline; flex-wrap: wrap; gap: 4px 10px; }
+  .award__rank { flex-direction: row; align-items: center; flex-wrap: wrap; }
   .award__media { grid-column: auto; }
   .award__media { flex-direction: column; align-items: flex-start; }
   .award__thumb { width: 100%; max-width: 360px; }
