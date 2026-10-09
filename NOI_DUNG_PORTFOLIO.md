@@ -113,7 +113,7 @@ Nhóm lọc: `supply_chain`, `data`, `ai`, `language`.
 | 11 | Supply Chain Essentials | VILAS, Vietnam Logistics and Aviation School | 08 Feb 2026 | SCEO1159 | (chưa có) | `VILAS.pdf` | supply_chain |
 | 12 | Certified Data Analyst Foundations Course | Data Science Academy via Udemy | 24 Jan 2026 | UC-fecd520a-d51e-4130-8d30-1e9a4878b864 | https://ude.my/UC-fecd520a-d51e-4130-8d30-1e9a4878b864 | `datascienceaca.pdf` | data |
 | 13 | Operations Research (2): Optimization Algorithms | National Taiwan University via Coursera | 09 Jan 2026 | FPFCQTJ77VH5 | https://coursera.org/verify/FPFCQTJ77VH5 | `OR_NTU.pdf` | supply_chain |
-| 14 | IELTS Academic, Overall 7.5 (L 7.5, R 7.5, W 6.5, S 7.5), CEFR C1 | IDP Education | 26 Aug 2023 | không hiển thị | không hiển thị | `ielts 7.5.jpg` (chỉ che ô Candidate ID, theo quyết định chủ portfolio ngày 07 Oct 2026) | language |
+| 14 | IELTS Academic, Overall 7.5 (tên hiển thị rút gọn theo yêu cầu chủ portfolio ngày 09 Oct 2026; band: L 7.5, R 7.5, W 6.5, S 7.5) | IDP Education | 26 Aug 2023 | không hiển thị | không hiển thị | `ielts 7.5.jpg` (chỉ che ô Candidate ID, theo quyết định chủ portfolio ngày 07 Oct 2026) | language |
 
 Logo tương ứng: LinkedIn Learning `Linkedin.png`, CSCMP `CSCMP.jpg`, Google `Google.webp`, Udemy `Udemy.png`, VILAS `VILAS.png`, Data Science Academy `Data Science Academy.png`, NTU `NTU.png`, IDP `IDP.jpg`.
 

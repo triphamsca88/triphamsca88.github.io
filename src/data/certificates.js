@@ -172,7 +172,7 @@ const certificates = [
   },
   {
     id: 'ielts',
-    name: 'IELTS Academic, Overall 7.5 (L 7.5, R 7.5, W 6.5, S 7.5), CEFR C1',
+    name: 'IELTS Academic, Overall 7.5',
     issuer: 'IDP Education',
     logo: LOGO.idp,
     date: '2023-08-26',
