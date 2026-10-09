@@ -36,7 +36,7 @@ Supply chain analytics student focused on demand planning, inventory management 
    * GPA 3.89/4.00 (9.1/10)
    * Track: Data Analytics, Demand Forecasting, Inventory Management, Lean Six Sigma, AI and IoT Applications
 2. **Rajamangala University of Technology Lanna (RMUTL)**, Chiang Mai, Thailand. Logo `RMUTL.png`
-   * International Student Exchange Program, Faculty of Engineering RMUTL in collaboration with UEH College of Technology and Design, 24 Jun 2026 to 2 Jul 2026
+   * International Student Exchange Program, Faculty of Engineering RMUTL in collaboration with UEH College of Technology and Design, Jun 2026 to Jul 2026 (chương trình thực tế 24 Jun 2026 đến 2 Jul 2026; trên web chỉ hiện tháng theo yêu cầu chủ portfolio ngày 09 Oct 2026)
    * Applied research on Automated Guided Vehicles and Autonomous Mobile Robots (AGV/AMR) for smart warehouse operations and storage automation; completed academic lectures, laboratory practice, robotics and automation workshops and cultural exchange activities.
    * Chứng nhận: `Certificate/EXCHANGE_RMUTL.jpg`
 

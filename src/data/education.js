@@ -33,8 +33,8 @@ const education = [
       en: 'Faculty of Engineering RMUTL in collaboration with UEH College of Technology and Design',
       vi: 'Khoa Kỹ thuật RMUTL phối hợp cùng Trường Công nghệ và Thiết kế UEH',
     },
-    start: '2026-06-24',
-    end: '2026-07-02',
+    start: '2026-06',
+    end: '2026-07',
     bullets: [
       {
         en: 'Applied research on Automated Guided Vehicles and Autonomous Mobile Robots (AGV/AMR) for smart warehouse operations and storage automation; completed academic lectures, laboratory practice, robotics and automation workshops and cultural exchange activities.',
