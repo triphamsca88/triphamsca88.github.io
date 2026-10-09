@@ -3,7 +3,7 @@
 const awards = [
   {
     id: 'ctd-scholars-2025',
-    rank: { en: 'Second Prize (Giải B)', vi: 'Giải B (Giải Nhì)' },
+    rank: { en: 'Second Prize (Giải B)', vi: 'Giải B (Giải Nhì)' },
     title: 'Student Scientific Research Award, CTD Scholars Student Awards 2025',
     theme: { en: 'Theme: Technology and Sustainable Development', vi: 'Chủ đề: Công nghệ và Phát triển bền vững' },
     org: 'Youth Union and Student Association of UEH, UEH College of Technology and Design',
