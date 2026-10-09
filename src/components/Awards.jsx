@@ -19,7 +19,7 @@ function AwardRow({ a }) {
         <span className="rank-badge"><Award aria-hidden="true" />{L(a.rank)}</span>
         <span className="award__date">{formatDate(a.date, lang)}</span>
       </div>
-      <div>
+      <div className="award__body">
         <h3 className="award__title">{a.title}</h3>
         {a.theme && <p className="award__theme">{L(a.theme)}</p>}
         <p className="award__org">
