@@ -15,6 +15,18 @@ const LOGO = {
 
 const certificates = [
   {
+    id: 'cscmp-warehousing',
+    name: 'CSCMP Supply Chain Foundations: Warehousing Operations Professional Certificate',
+    issuer: 'CSCMP via LinkedIn Learning',
+    logo: LOGO.cscmp,
+    date: '2026-10-09',
+    credentialId: 'b16ad8268c77c9ed0a92e863a58f5e6ffd8b687cf8cb8d86b76f5e87cde4fe84',
+    verifyUrl: '',
+    image: 'img/certificates/cscmp_warehousing_operations.webp',
+    thumb: 'img/certificates/cscmp_warehousing_operations_thumb.webp',
+    category: 'supply_chain',
+  },
+  {
     id: 'lean-six-sigma',
     name: 'Lean Six Sigma Foundations',
     issuer: 'LinkedIn Learning',

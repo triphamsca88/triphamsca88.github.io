@@ -63,6 +63,7 @@ CERTS = [
     ("SCMISSION.jpg", "awards", "scmission_2026"),
     ("LASTMILE3I.jpg", "awards", "last_mile_optimizer_2025"),
     ("HACKATHONDIGIPORTUMT.jpg", "awards", "hackathon_digiport_2025"),
+    ("CSCMP WAREHOUSING.jpg", "certificates", "cscmp_warehousing_operations"),
     ("CSCMP INVENTORY.jpg", "certificates", "cscmp_inventory_management"),
     ("inventoryexcel.jpg", "certificates", "excel_inventory_problems"),
     ("forecasting excel.jpg", "certificates", "excel_forecasting"),

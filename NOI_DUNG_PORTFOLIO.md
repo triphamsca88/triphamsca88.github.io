@@ -70,7 +70,7 @@ Supply chain analytics student focused on demand planning, inventory management 
 ## 5. Skills
 
 * Data Analytics: SQL (MySQL), Power BI, Advanced Excel (Pivot Tables, XLOOKUP, Power Query, DAX), Python (basic, từ Google Data Analytics). Trên web hiển thị kèm logo gốc của từng phần mềm (`public/img/tools/`).
-* Supply Chain: End to End Supply Chain Overview, Demand Forecasting, S&OP, Inventory Management, Lean Six Sigma, Network Optimisation, MPS/MRP, Vehicle Routing
+* Supply Chain: End to End Supply Chain Overview, Demand Forecasting, S&OP, Inventory Management, Lean Six Sigma, Network Optimisation, Warehouse Operations, Logistics Management, Vehicle Routing (bỏ MPS/MRP theo yêu cầu chủ portfolio ngày 09 Oct 2026)
 * Soft skills: Project Management, Risk Management, Stakeholder Management, Team Coordination, Problem Solving, Planning and Execution
 * Languages: English (IELTS Academic 7.5, CEFR C1; Listening 7.5, Reading 7.5, Writing 6.5, Speaking 7.5)
 
@@ -100,19 +100,20 @@ Nhóm lọc: `supply_chain`, `data`, `ai`, `language`.
 
 | # | Tên | Đơn vị cấp | Ngày | Mã | Link xác minh | File gốc | Nhóm |
 |---|---|---|---|---|---|---|---|
-| 1 | Lean Six Sigma Foundations | LinkedIn Learning | 07 Oct 2026 | 4ffdbfdef27c2ce9828e7a1855f47f7d9a203879541500f31b7f7d7a17b5c4be | (chưa có) | `LEAN6SIGMALINKEDINLEARNING.jpg` | supply_chain |
-| 2 | CSCMP Supply Chain Foundations: Inventory Management Professional Certificate | CSCMP via LinkedIn Learning | 06 Oct 2026 | e8dc4bb3900da6daf78b3f2d049851c97d9cadcc7b2b3334ec93200ea0604891 | (chưa có) | `CSCMP INVENTORY.jpg` | supply_chain |
-| 3 | Excel Supply Chain Analysis: Solving Inventory Problems | LinkedIn Learning | 06 Oct 2026 | 6aad65e6786848a8346b28d33fb2a6ad87874cc145c2f1672d8fbe89083ef5c3 | (chưa có) | `inventoryexcel.jpg` | supply_chain |
-| 4 | CSCMP Supply Chain Foundations: Demand Planning Professional Certificate | CSCMP via LinkedIn Learning | 28 Sep 2026 | e9ee14fc7c855512e06cca919a0476c0e5a8cb637feb2c64c5f247b7c8047c18 | (chưa có) | `CSCMP DEMAND PLANNING.jpg` | supply_chain |
-| 5 | Excel Data Analysis for Supply Chain: Forecasting | LinkedIn Learning | 28 Sep 2026 | ec8a71c6efc91d9efbda253835d6b2fb12c61e54a3a8824239e962f2a495a476 | (chưa có) | `forecasting excel.jpg` | supply_chain |
-| 6 | Google AI Professional Certificate (7 courses) | Google via Coursera | 03 Aug 2026 | JWFHDMXMN2IA | https://coursera.org/verify/professional-cert/JWFHDMXMN2IA | `AI Google.pdf` | ai |
-| 7 | AI for Data Analysis | Google via Coursera | 03 Aug 2026 | 5UCZT4YL84UV | https://coursera.org/verify/5UCZT4YL84UV | `AIFORDA.pdf` | ai |
-| 8 | Google Data Analytics Professional Certificate (9 courses) | Google via Coursera | 01 Aug 2026 | FEVDUD12PM0I | https://coursera.org/verify/professional-cert/FEVDUD12PM0I | `DA Google.pdf` | data |
-| 9 | Data Processing & Dashboard Building by Microsoft Excel (tên gốc trên chứng nhận: "Xử Lý Dữ Liệu & Xây Dựng Dashboard bằng Excel Data Analyze") | Udemy | 14 Mar 2026 | UC-e0434cf6-10cf-4ee9-9440-bcdbc9159373 | https://ude.my/UC-e0434cf6-10cf-4ee9-9440-bcdbc9159373 | `udemy.pdf` | data |
-| 10 | Supply Chain Essentials | VILAS, Vietnam Logistics and Aviation School | 08 Feb 2026 | SCEO1159 | (chưa có) | `VILAS.pdf` | supply_chain |
-| 11 | Certified Data Analyst Foundations Course | Data Science Academy via Udemy | 24 Jan 2026 | UC-fecd520a-d51e-4130-8d30-1e9a4878b864 | https://ude.my/UC-fecd520a-d51e-4130-8d30-1e9a4878b864 | `datascienceaca.pdf` | data |
-| 12 | Operations Research (2): Optimization Algorithms | National Taiwan University via Coursera | 09 Jan 2026 | FPFCQTJ77VH5 | https://coursera.org/verify/FPFCQTJ77VH5 | `OR_NTU.pdf` | supply_chain |
-| 13 | IELTS Academic, Overall 7.5 (L 7.5, R 7.5, W 6.5, S 7.5), CEFR C1 | IDP Education | 26 Aug 2023 | không hiển thị | không hiển thị | `ielts 7.5.jpg` (chỉ che ô Candidate ID, theo quyết định chủ portfolio ngày 07 Oct 2026) | language |
+| 1 | CSCMP Supply Chain Foundations: Warehousing Operations Professional Certificate | CSCMP via LinkedIn Learning | 09 Oct 2026 | b16ad8268c77c9ed0a92e863a58f5e6ffd8b687cf8cb8d86b76f5e87cde4fe84 | (chưa có) | `CSCMP WAREHOUSING.jpg` | supply_chain |
+| 2 | Lean Six Sigma Foundations | LinkedIn Learning | 07 Oct 2026 | 4ffdbfdef27c2ce9828e7a1855f47f7d9a203879541500f31b7f7d7a17b5c4be | (chưa có) | `LEAN6SIGMALINKEDINLEARNING.jpg` | supply_chain |
+| 3 | CSCMP Supply Chain Foundations: Inventory Management Professional Certificate | CSCMP via LinkedIn Learning | 06 Oct 2026 | e8dc4bb3900da6daf78b3f2d049851c97d9cadcc7b2b3334ec93200ea0604891 | (chưa có) | `CSCMP INVENTORY.jpg` | supply_chain |
+| 4 | Excel Supply Chain Analysis: Solving Inventory Problems | LinkedIn Learning | 06 Oct 2026 | 6aad65e6786848a8346b28d33fb2a6ad87874cc145c2f1672d8fbe89083ef5c3 | (chưa có) | `inventoryexcel.jpg` | supply_chain |
+| 5 | CSCMP Supply Chain Foundations: Demand Planning Professional Certificate | CSCMP via LinkedIn Learning | 28 Sep 2026 | e9ee14fc7c855512e06cca919a0476c0e5a8cb637feb2c64c5f247b7c8047c18 | (chưa có) | `CSCMP DEMAND PLANNING.jpg` | supply_chain |
+| 6 | Excel Data Analysis for Supply Chain: Forecasting | LinkedIn Learning | 28 Sep 2026 | ec8a71c6efc91d9efbda253835d6b2fb12c61e54a3a8824239e962f2a495a476 | (chưa có) | `forecasting excel.jpg` | supply_chain |
+| 7 | Google AI Professional Certificate (7 courses) | Google via Coursera | 03 Aug 2026 | JWFHDMXMN2IA | https://coursera.org/verify/professional-cert/JWFHDMXMN2IA | `AI Google.pdf` | ai |
+| 8 | AI for Data Analysis | Google via Coursera | 03 Aug 2026 | 5UCZT4YL84UV | https://coursera.org/verify/5UCZT4YL84UV | `AIFORDA.pdf` | ai |
+| 9 | Google Data Analytics Professional Certificate (9 courses) | Google via Coursera | 01 Aug 2026 | FEVDUD12PM0I | https://coursera.org/verify/professional-cert/FEVDUD12PM0I | `DA Google.pdf` | data |
+| 10 | Data Processing & Dashboard Building by Microsoft Excel (tên gốc trên chứng nhận: "Xử Lý Dữ Liệu & Xây Dựng Dashboard bằng Excel Data Analyze") | Udemy | 14 Mar 2026 | UC-e0434cf6-10cf-4ee9-9440-bcdbc9159373 | https://ude.my/UC-e0434cf6-10cf-4ee9-9440-bcdbc9159373 | `udemy.pdf` | data |
+| 11 | Supply Chain Essentials | VILAS, Vietnam Logistics and Aviation School | 08 Feb 2026 | SCEO1159 | (chưa có) | `VILAS.pdf` | supply_chain |
+| 12 | Certified Data Analyst Foundations Course | Data Science Academy via Udemy | 24 Jan 2026 | UC-fecd520a-d51e-4130-8d30-1e9a4878b864 | https://ude.my/UC-fecd520a-d51e-4130-8d30-1e9a4878b864 | `datascienceaca.pdf` | data |
+| 13 | Operations Research (2): Optimization Algorithms | National Taiwan University via Coursera | 09 Jan 2026 | FPFCQTJ77VH5 | https://coursera.org/verify/FPFCQTJ77VH5 | `OR_NTU.pdf` | supply_chain |
+| 14 | IELTS Academic, Overall 7.5 (L 7.5, R 7.5, W 6.5, S 7.5), CEFR C1 | IDP Education | 26 Aug 2023 | không hiển thị | không hiển thị | `ielts 7.5.jpg` (chỉ che ô Candidate ID, theo quyết định chủ portfolio ngày 07 Oct 2026) | language |
 
 Logo tương ứng: LinkedIn Learning `Linkedin.png`, CSCMP `CSCMP.jpg`, Google `Google.webp`, Udemy `Udemy.png`, VILAS `VILAS.png`, Data Science Academy `Data Science Academy.png`, NTU `NTU.png`, IDP `IDP.jpg`.
 
