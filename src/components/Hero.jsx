@@ -5,6 +5,9 @@ import { asset } from '../utils/asset.js'
 import { scrollToSection } from '../sections.js'
 import { useReducedMotion } from '../hooks/useReducedMotion.js'
 
+/* global __HERO_V__ */
+const HERO_SRC = `img/hero_supply_chain.svg${typeof __HERO_V__ === 'string' ? `?v=${__HERO_V__}` : ''}`
+
 export default function Hero() {
   const { t, L } = useLocalized()
   const reduced = useReducedMotion()
@@ -16,7 +19,7 @@ export default function Hero() {
     <section className="hero" id="top" aria-labelledby="hero-name">
       <img
         className="hero__img"
-        src={asset('img/hero_supply_chain.svg')}
+        src={asset(HERO_SRC)}
         alt="Animated supply chain network from supplier to customer, with a barge on an inland waterway and analytics cards for fleet performance and demand forecast"
         fetchPriority="high"
       />
