@@ -114,8 +114,8 @@
   <g transform="translate(820,250)">
     <circle class="ring" r="26"/>
     <circle class="node" r="26"/>
-    <rect class="ico" x="-11" y="-9" width="22" height="18" rx="1.5"/>
-    <path class="ico" d="M-11,-9 L11,9 M11,-9 L-11,9"/>
+    <!-- package: goods leave the supplier -->
+    <path class="ico" d="M0,-12 L11,-6 V7 L0,13 L-11,7 V-6 Z M-11,-6 L0,0 L11,-6 M0,0 V13 M-5.5,-9 L5.5,-3"/>
     <text class="lbl" y="52" text-anchor="middle">SUPPLIER</text>
   </g>
   <!-- factory -->
@@ -148,10 +148,12 @@
   <g transform="translate(1330,520)">
     <circle class="ring" r="26" style="animation-delay:2.4s"/>
     <circle class="node" r="26"/>
-    <rect class="ico" x="-11" y="0" width="10" height="10"/>
-    <rect class="ico" x="1" y="0" width="10" height="10"/>
-    <rect class="ico" x="-5" y="-11" width="10" height="10"/>
+    <!-- delivery truck: outbound distribution -->
+    <path class="ico" d="M-13,-7 H3 V6 H-13 Z M3,-3 H8.5 L13,2 V6 H3"/>
+    <circle class="ico" cx="-7" cy="7.5" r="2.8" style="fill:#11304D"/>
+    <circle class="ico" cx="8" cy="7.5" r="2.8" style="fill:#11304D"/>
     <text class="lbl" y="52" text-anchor="middle">DISTRIBUTION</text>
+    <text class="lbl" y="70" text-anchor="middle">CENTER</text>
   </g>
   <!-- customer -->
   <g transform="translate(1470,330)">
