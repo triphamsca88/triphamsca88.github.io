@@ -1,4 +1,5 @@
-import { ArrowUpRight } from 'lucide-react'
+import { useRef, useState } from 'react'
+import { Award, Check, ChevronLeft, ChevronRight, Maximize2, Play } from 'lucide-react'
 import { useLocalized } from '../i18n/useLocalized.js'
 import projects from '../data/projects.js'
 import { newestFirst } from '../utils/dates.js'
@@ -6,6 +7,8 @@ import { asset } from '../utils/asset.js'
 import { numOf } from '../sections.js'
 import SectionHeader from './SectionHeader.jsx'
 import { GitHubIcon } from './BrandIcon.jsx'
+import CertificateButton from './CertificateButton.jsx'
+import { useLightbox } from './Lightbox.jsx'
 
 // Small container drawn in SVG: corrugated walls and door bars, hauled along a dashed lane.
 function ContainerBox() {
@@ -42,33 +45,144 @@ function InTransit() {
   )
 }
 
-function ProjectCard({ p }) {
+const pad = (n) => String(n).padStart(2, '0')
+
+// Media viewer: one stage (image or video) with a caption, previous and next controls and a thumbnail strip.
+function MediaViewer({ items, title }) {
+  const { t } = useLocalized()
+  const openLightbox = useLightbox()
+  const [index, setIndex] = useState(0)
+  const stripRef = useRef(null)
+  const item = items[index]
+  const go = (next) => {
+    const i = (next + items.length) % items.length
+    setIndex(i)
+    stripRef.current?.children[i]?.scrollIntoView({ block: 'nearest', inline: 'center', behavior: 'smooth' })
+  }
+
+  return (
+    <div className="viewer" role="group" aria-label={`${t('projects.gallery')}: ${title}`}>
+      <div className="viewer__stage">
+        {item.type === 'video' ? (
+          <video key={item.src} className="viewer__video" controls preload="none" playsInline
+            poster={asset(item.poster)} aria-label={item.alt}>
+            <source src={asset(item.src)} type="video/mp4" />
+          </video>
+        ) : (
+          <button type="button" className="viewer__zoom" aria-label={`${t('projects.openImage')}: ${item.alt}`}
+            onClick={() => openLightbox({ src: item.src, alt: item.alt, caption: item.caption })}>
+            <img key={item.src} src={asset(item.src)} alt={item.alt} loading="lazy" decoding="async" />
+            <span className="viewer__zoom-hint" aria-hidden="true"><Maximize2 /></span>
+          </button>
+        )}
+        <button type="button" className="viewer__nav viewer__nav--prev" onClick={() => go(index - 1)} aria-label={t('projects.prev')}>
+          <ChevronLeft aria-hidden="true" />
+        </button>
+        <button type="button" className="viewer__nav viewer__nav--next" onClick={() => go(index + 1)} aria-label={t('projects.next')}>
+          <ChevronRight aria-hidden="true" />
+        </button>
+      </div>
+
+      <div className="viewer__caption" aria-live="polite">
+        <span className="viewer__count">{pad(index + 1)} / {pad(items.length)}</span>
+        <p>{item.caption}</p>
+      </div>
+
+      <ol className="viewer__strip" ref={stripRef}>
+        {items.map((m, i) => (
+          <li key={m.src}>
+            <button type="button" className="viewer__thumb" aria-current={i === index ? 'true' : undefined}
+              aria-label={`${pad(i + 1)}: ${m.caption}`} onClick={() => go(i)}>
+              <img src={asset(m.thumb)} alt="" loading="lazy" decoding="async" />
+              {m.type === 'video' && (
+                <span className="viewer__play" aria-hidden="true"><Play />{m.duration}</span>
+              )}
+            </button>
+          </li>
+        ))}
+      </ol>
+      <p className="viewer__hint">{t('projects.viewerHint')}</p>
+    </div>
+  )
+}
+
+function CaseStudy({ p }) {
   const { t, L } = useLocalized()
   return (
-    <article className="project-card">
-      {p.image && <img src={asset(p.image)} alt={L(p.title)} loading="lazy" decoding="async" />}
-      <div className="project-card__body">
-        <h3 className="tl-title">{L(p.title)}</h3>
-        <dl>
-          {p.problem && <><dt>{t('projects.problem')}</dt><dd>{L(p.problem)}</dd></>}
-          {p.approach && <><dt>{t('projects.approach')}</dt><dd>{L(p.approach)}</dd></>}
-          {p.result && <><dt>{t('projects.result')}</dt><dd>{L(p.result)}</dd></>}
-        </dl>
-        {p.tools?.length > 0 && (
-          <ul className="chips">{p.tools.map((tool) => <li className="chip" key={tool}>{tool}</li>)}</ul>
-        )}
-        <div className="cert-actions" style={{ marginTop: 'auto' }}>
-          {p.github && (
-            <a className="btn-outline" href={p.github} target="_blank" rel="noopener noreferrer">
-              <GitHubIcon /> {t('projects.code')}
-            </a>
-          )}
-          {p.demo && (
-            <a className="btn-outline" href={p.demo} target="_blank" rel="noopener noreferrer">
-              <ArrowUpRight aria-hidden="true" /> {t('projects.demo')}
-            </a>
+    <article className="case" aria-labelledby={`${p.id}-title`}>
+      <header className="case__head">
+        <p className="case__tag">
+          <span>{p.code}</span><span aria-hidden="true">·</span><span>{p.stream}</span><span aria-hidden="true">·</span><span>{p.year}</span>
+        </p>
+        <h3 className="case__title" id={`${p.id}-title`}>{L(p.title)}</h3>
+        <p className="case__topic">{L(p.topic)}</p>
+        <div className="case__meta">
+          {p.award && <span className="rank-badge"><Award aria-hidden="true" />{L(p.award)}</span>}
+          {p.tags?.length > 0 && (
+            <ul className="case__tags">{p.tags.map((tag) => <li key={tag}>{tag}</li>)}</ul>
           )}
         </div>
+      </header>
+
+      <div className="case__grid">
+        <div className="case__media">
+          <MediaViewer items={p.media} title={L(p.title)} />
+        </div>
+
+        <div className="case__text">
+          <section className="case__block">
+            <h4 className="case__h">{t('projects.overview')}</h4>
+            <p>{L(p.overview)}</p>
+          </section>
+          <section className="case__block">
+            <h4 className="case__h">{t('projects.problem')}</h4>
+            <p>{L(p.problem)}</p>
+          </section>
+          <section className="case__block case__role">
+            <h4 className="case__h">{t('projects.role')}</h4>
+            <ul>{p.role.map((r) => <li key={L(r)}>{L(r)}</li>)}</ul>
+          </section>
+        </div>
+      </div>
+
+      {p.pipeline?.length > 0 && (
+        <section className="case__block case__pipeline">
+          <h4 className="case__h">{t('projects.how')}</h4>
+          <ol className="pipe">
+            {p.pipeline.map((s, i) => (
+              <li className="pipe__stop" key={s.code}>
+                <span className="pipe__node" aria-hidden="true" />
+                <span className="pipe__code">{pad(i + 1)} · {s.code}</span>
+                <span className="pipe__title">{L(s.title)}</span>
+                <span className="pipe__detail">{L(s.detail)}</span>
+              </li>
+            ))}
+          </ol>
+        </section>
+      )}
+
+      <div className="case__foot">
+        <section className="case__block">
+          <h4 className="case__h">{t('projects.results')}</h4>
+          <ul className="case__results">
+            {p.results.map((r) => <li key={L(r)}><Check aria-hidden="true" />{L(r)}</li>)}
+          </ul>
+        </section>
+        <section className="case__block">
+          <h4 className="case__h">{t('projects.tools')}</h4>
+          <ul className="chips">{p.tools.map((tool) => <li className="chip" key={tool}>{tool}</li>)}</ul>
+          <div className="case__actions">
+            {p.github && (
+              <a className="btn-outline" href={p.github} target="_blank" rel="noopener noreferrer">
+                <GitHubIcon /> {t('projects.code')}
+              </a>
+            )}
+            {p.certificate && (
+              <CertificateButton image={p.certificate.image} alt={p.certificate.alt} caption={p.certificate.caption}
+                label={t('projects.certificate')} />
+            )}
+          </div>
+        </section>
       </div>
     </article>
   )
@@ -83,10 +197,8 @@ export default function Projects() {
         {projects.length === 0 ? (
           <InTransit />
         ) : (
-          <div className="row g-4">
-            {newestFirst(projects).map((p) => (
-              <div className="col-md-6" key={p.id}><ProjectCard p={p} /></div>
-            ))}
+          <div className="cases">
+            {newestFirst(projects).map((p) => <CaseStudy key={p.id} p={p} />)}
           </div>
         )}
       </div>
