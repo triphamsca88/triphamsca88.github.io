@@ -9,6 +9,11 @@ const projects = [
     id: 'aiot-clean-food',
     date: '2026-04-17', // CTD Scholars decision date; award edition 2025
     title: { en: 'AIoT Traceability for Clean Food Supply Chains' },
+    category: 'IoT · Cold chain analytics',
+    roleLine: { en: 'IoT and Data workstream lead · CTD Scholars 2025 · Second Prize' },
+    summary: { en: 'Built a real time cold chain monitoring dashboard and a shelf life forecasting model for an AIoT traceability platform, and designed its Level 0 data flow diagram.' },
+    highlights: [{ en: 'Sensor readings every 2 s' }, { en: '6 stage IoT pipeline' }, { en: 'Shelf life forecast per product' }],
+    cardImages: ['img/projects/aiot/dashboard_thumb.webp', 'img/projects/aiot/hardware_thumb.webp', 'img/projects/aiot/foam_container_thumb.webp'],
     topic: {
       en: 'Research topic: Application of AI and IoT in Verifying the Transparency of Clean Food Supply Chains with Blockchain Technology Integration',
     },

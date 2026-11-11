@@ -1,5 +1,5 @@
-import { useRef, useState } from 'react'
-import { Award, Check, ChevronLeft, ChevronRight, Maximize2, Play } from 'lucide-react'
+import { useCallback, useEffect, useRef, useState } from 'react'
+import { ArrowRight, Award, Check, ChevronLeft, ChevronRight, Maximize2, Play, X } from 'lucide-react'
 import { useLocalized } from '../i18n/useLocalized.js'
 import projects from '../data/projects.js'
 import { newestFirst } from '../utils/dates.js'
@@ -185,20 +185,114 @@ function CaseStudy({ p }) {
   )
 }
 
+// Compact card in the Projects grid; the full case study opens in a dialog.
+function ProjectCard({ p, onOpen }) {
+  const { t, L } = useLocalized()
+  const images = (p.cardImages || []).slice(0, 3)
+  return (
+    <article className="pcard" aria-labelledby={`${p.id}-card-title`}>
+      {images.length > 0 && (
+        <button type="button" className="pcard__media" onClick={onOpen} tabIndex={-1} aria-hidden="true">
+          {images.map((src) => <img key={src} src={asset(src)} alt="" loading="lazy" decoding="async" />)}
+        </button>
+      )}
+      <div className="pcard__body">
+        <p className="pcard__cat">{p.category}</p>
+        <h3 className="pcard__title" id={`${p.id}-card-title`}>{L(p.title)}</h3>
+        <p className="pcard__role">{L(p.roleLine)}</p>
+        <p className="pcard__summary">{L(p.summary)}</p>
+        {p.highlights?.length > 0 && (
+          <p className="pcard__kpis">{p.highlights.map(L).join('\u00a0· ')}</p>
+        )}
+        <button type="button" className="pcard__open" onClick={onOpen} aria-haspopup="dialog">
+          {t('projects.open')} <ArrowRight aria-hidden="true" />
+        </button>
+      </div>
+    </article>
+  )
+}
+
+// Grid filler shown while the number of projects is odd: the next case study is still on its way.
+function NextInTransit() {
+  const { t } = useLocalized()
+  return (
+    <div className="pcard pcard--transit" aria-hidden="true">
+      <div className="transit__scene">
+        <span className="transit__track" />
+        <span className="transit__port transit__port--a" />
+        <span className="transit__port transit__port--b" />
+        <ContainerBox />
+      </div>
+      <span className="transit__status">{t('projects.status')}</span>
+      <p className="pcard__transit-text">{t('projects.upcoming')}</p>
+    </div>
+  )
+}
+
+function CaseDialog({ p, onClose }) {
+  const { t, L } = useLocalized()
+  const panelRef = useRef(null)
+  const closeRef = useRef(null)
+
+  useEffect(() => {
+    const previous = document.activeElement
+    const { overflow } = document.body.style
+    document.body.style.overflow = 'hidden'
+    closeRef.current?.focus()
+    const onKey = (e) => {
+      if (document.querySelector('.lightbox')) return // the image viewer on top handles its own keys
+      if (e.key === 'Escape') { e.preventDefault(); onClose(); return }
+      if (e.key !== 'Tab') return
+      const focusable = panelRef.current?.querySelectorAll('button, [href], video, [tabindex]:not([tabindex="-1"])')
+      if (!focusable?.length) return
+      const first = focusable[0]
+      const last = focusable[focusable.length - 1]
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus() }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus() }
+    }
+    document.addEventListener('keydown', onKey)
+    return () => {
+      document.removeEventListener('keydown', onKey)
+      document.body.style.overflow = overflow
+      previous?.focus?.()
+    }
+  }, [onClose])
+
+  return (
+    <div className="case-modal" onClick={(e) => { if (e.target === e.currentTarget) onClose() }}>
+      <div className="case-modal__panel" role="dialog" aria-modal="true" aria-label={L(p.title)} ref={panelRef}>
+        <div className="case-modal__bar">
+          <span className="case-modal__label">{p.category}</span>
+          <button type="button" className="case-modal__close" onClick={onClose} ref={closeRef} aria-label={t('common.close')}>
+            <X aria-hidden="true" />
+          </button>
+        </div>
+        <CaseStudy p={p} />
+      </div>
+    </div>
+  )
+}
+
 export default function Projects() {
   const { t } = useLocalized()
+  const [openId, setOpenId] = useState(null)
+  const close = useCallback(() => setOpenId(null), [])
+  const list = newestFirst(projects)
+  const open = list.find((p) => p.id === openId)
   return (
     <section className="section section--alt" id="projects" aria-labelledby="projects-title" tabIndex={-1}>
       <div className="section__inner">
         <SectionHeader num={numOf('projects')} title={t('sections.projects')} id="projects-title" />
-        {projects.length === 0 ? (
+        {list.length === 0 ? (
           <InTransit />
         ) : (
-          <div className="cases">
-            {newestFirst(projects).map((p) => <CaseStudy key={p.id} p={p} />)}
+          <div className="pgrid">
+            {list.map((p) => <ProjectCard key={p.id} p={p} onOpen={() => setOpenId(p.id)} />)}
+            {list.length % 2 === 1 && <NextInTransit />}
           </div>
         )}
       </div>
+      {open && <CaseDialog p={open} onClose={close} />}
     </section>
   )
 }

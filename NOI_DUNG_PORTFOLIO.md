@@ -129,6 +129,7 @@ Case study 01 (chủ portfolio yêu cầu ngày 12 Nov 2026): AIoT Traceability 
 * Kết quả: giải Nhì CTD Scholars 2025; prototype thùng xốp với quýt, táo đỏ, lê vàng; dashboard trong demo ghi 26.4°C đến 33.2°C.
 * Media: clip IoT 1:04 cắt từ 1:22,5 đến 2:26,8 của video gốc; bản demo đầy đủ nén còn khoảng 12 MB.
 * RSL và TTE lấy theo code `frontend/html/nhietdo.html` của repo: RSL = % hạn sử dụng còn lại, TTE = số ngày còn lại; mô hình Q10 (Q10 = 2.0, nhiệt độ tham chiếu 4°C, hạn tham chiếu 90 ngày), cập nhật mỗi 4 phút theo nhiệt độ trung bình 4 phút.
+* Thẻ rút gọn trên lưới Projects: danh mục "IoT · Cold chain analytics"; dòng vai trò "IoT and Data workstream lead · CTD Scholars 2025 · Second Prize"; chỉ số "Sensor readings every 2 s · 6 stage IoT pipeline · Shelf life forecast per product"; nút "View selected project" mở case study đầy đủ trong cửa sổ.
 * Chủ portfolio yêu cầu ngày 12 Nov 2026: bỏ nhãn CASE 01, khung My role viền mảnh bao quanh như huy hiệu Live in Gemadept ecosystem, dùng ảnh DFD rõ hơn.
 
 ## 9. Ảnh

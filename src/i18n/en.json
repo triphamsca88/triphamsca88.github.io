@@ -90,7 +90,9 @@
     "openImage": "Open full image",
     "prev": "Previous item",
     "next": "Next item",
-    "viewerHint": "Select a thumbnail to view the dashboard, hardware, diagrams, videos and certificate."
+    "viewerHint": "Select a thumbnail to view the dashboard, hardware, diagrams, videos and certificate.",
+    "open": "View selected project",
+    "upcoming": "The next case study is on its way."
   },
   "awards": {
     "rank": "Rank"
