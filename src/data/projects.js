@@ -7,10 +7,7 @@
 const projects = [
   {
     id: 'aiot-clean-food',
-    code: 'CASE 01',
-    stream: 'AIoT',
     date: '2026-04-17', // CTD Scholars decision date; award edition 2025
-    year: '2025',
     title: { en: 'AIoT Traceability for Clean Food Supply Chains' },
     topic: {
       en: 'Research topic: Application of AI and IoT in Verifying the Transparency of Clean Food Supply Chains with Blockchain Technology Integration',
@@ -26,7 +23,7 @@ const projects = [
     role: [
       { en: 'Led the IoT and Data workstream of the project.' },
       { en: 'Built the real time monitoring dashboard for container temperature and humidity.' },
-      { en: 'Developed a quantitative model to forecast product shelf life, shown as remaining shelf life (RSL) and TTE for each product.' },
+      { en: 'Developed a quantitative model to forecast product shelf life, reported as RSL (remaining shelf life, %) and TTE (time to expiry, days) for each product.' },
       { en: 'Designed the Level 0 data flow diagram (DFD) for the platform’s information system.' },
     ],
     pipeline: [
@@ -41,7 +38,7 @@ const projects = [
     results: [
       { en: 'Second Prize, Student Scientific Research Award, CTD Scholars Student Awards 2025.' },
       { en: 'Working prototype: the sensor kit placed in a foam box that simulates a container, tested with mandarins, red apples and golden pears.' },
-      { en: 'In the recorded demo the dashboard tracked the container between 26.4°C and 33.2°C while estimating RSL and TTE for each fruit.' },
+      { en: 'In the recorded demo the dashboard tracked the container between 26.4°C and 33.2°C while estimating RSL (remaining shelf life, %) and TTE (time to expiry, days) for each fruit.' },
     ],
     github: 'https://github.com/triphamsca88/AIOT-Project',
     certificate: {
@@ -54,7 +51,7 @@ const projects = [
         type: 'image',
         src: 'img/projects/aiot/dashboard.webp',
         thumb: 'img/projects/aiot/dashboard_thumb.webp',
-        caption: 'Real time dashboard: container temperature and humidity, with RSL and TTE for each product (interface in Vietnamese).',
+        caption: 'Real time dashboard: container temperature and humidity, with RSL (remaining shelf life, %) and TTE (time to expiry, days) for each product (interface in Vietnamese).',
         alt: 'Monitoring dashboard with temperature and humidity charts and three fruit orders with shelf life figures',
       },
       {
@@ -84,7 +81,7 @@ const projects = [
         type: 'image',
         src: 'img/projects/aiot/mobile_kpi.webp',
         thumb: 'img/projects/aiot/mobile_kpi_thumb.webp',
-        caption: 'Mobile view: live temperature and humidity KPIs with shelf life for each product.',
+        caption: 'Mobile view: live temperature and humidity KPIs with RSL (remaining shelf life, %) and TTE (time to expiry, days) for each product.',
         alt: 'Mobile dashboard view with temperature KPIs and three products',
       },
       {

@@ -124,11 +124,12 @@ Chứng chỉ "Project Management (Google)" ghi trong CV: ngày 11 Nov 2026 ch�
 
 Case study 01 (chủ portfolio yêu cầu ngày 12 Nov 2026): AIoT Traceability for Clean Food Supply Chains. Nguồn: đề tài CTD Scholars 2025 (giải Nhì), repo https://github.com/triphamsca88/AIOT-Project, video demo `IOT.mp4` (8:47), sơ đồ pipeline IoT, ảnh phần cứng ESP8266 + DHT11, ảnh thùng xốp mô phỏng container, ảnh dashboard, ảnh DFD mức 0 do chủ portfolio gửi.
 
-* Vai trò: Led the IoT and Data workstream; built the real time monitoring dashboard; developed a quantitative model to forecast product shelf life (RSL, TTE); designed the Level 0 DFD.
+* Vai trò: Led the IoT and Data workstream; built the real time monitoring dashboard; developed a quantitative model to forecast product shelf life, reported as RSL (remaining shelf life, %) and TTE (time to expiry, days); designed the Level 0 DFD.
 * Pipeline (dịch từ sơ đồ của chủ portfolio): DHT11 (T/RH, 2 s) → ESP8266 edge (kiểm tra, lọc NaN, log lỗi, dew risk sơ bộ) → IoT data layer → HTTP API GET /api/now (JSON) → dashboard React (poll 2 s, current/avg/min/max) → rule engine (dew/shrivel, TTD ≤ 10 s, FAR ≤ 5%) → cảnh báo, xuất log.
 * Kết quả: giải Nhì CTD Scholars 2025; prototype thùng xốp với quýt, táo đỏ, lê vàng; dashboard trong demo ghi 26.4°C đến 33.2°C.
 * Media: clip IoT 1:04 cắt từ 1:22,5 đến 2:26,8 của video gốc; bản demo đầy đủ nén còn khoảng 12 MB.
-* [CẦN XÁC NHẬN] Ý nghĩa đầy đủ của TTE; câu Problem là diễn giải bối cảnh đề tài.
+* RSL và TTE lấy theo code `frontend/html/nhietdo.html` của repo: RSL = % hạn sử dụng còn lại, TTE = số ngày còn lại; mô hình Q10 (Q10 = 2.0, nhiệt độ tham chiếu 4°C, hạn tham chiếu 90 ngày), cập nhật mỗi 4 phút theo nhiệt độ trung bình 4 phút.
+* Chủ portfolio yêu cầu ngày 12 Nov 2026: bỏ nhãn CASE 01, khung My role viền mảnh bao quanh như huy hiệu Live in Gemadept ecosystem, dùng ảnh DFD rõ hơn.
 
 ## 9. Ảnh
 

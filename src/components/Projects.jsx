@@ -111,9 +111,6 @@ function CaseStudy({ p }) {
   return (
     <article className="case" aria-labelledby={`${p.id}-title`}>
       <header className="case__head">
-        <p className="case__tag">
-          <span>{p.code}</span><span aria-hidden="true">·</span><span>{p.stream}</span><span aria-hidden="true">·</span><span>{p.year}</span>
-        </p>
         <h3 className="case__title" id={`${p.id}-title`}>{L(p.title)}</h3>
         <p className="case__topic">{L(p.topic)}</p>
         <div className="case__meta">
