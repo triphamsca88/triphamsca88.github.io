@@ -100,13 +100,13 @@ Nhóm lọc: `supply_chain`, `data`, `ai` (hiển thị "AI & Management", chủ
 
 | # | Tên | Đơn vị cấp | Ngày | Mã | Link xác minh | File gốc | Nhóm |
 |---|---|---|---|---|---|---|---|
-| 1 | CSCMP Supply Chain Foundations: Warehousing Operations Professional Certificate | CSCMP via LinkedIn Learning | 09 Oct 2026 | b16ad8268c77c9ed0a92e863a58f5e6ffd8b687cf8cb8d86b76f5e87cde4fe84 | (chưa có) | `CSCMP WAREHOUSING.jpg` | supply_chain |
-| 2 | Lean Six Sigma Foundations | LinkedIn Learning | 07 Oct 2026 | 4ffdbfdef27c2ce9828e7a1855f47f7d9a203879541500f31b7f7d7a17b5c4be | (chưa có) | `LEAN6SIGMALINKEDINLEARNING.jpg` | supply_chain |
-| 3 | CSCMP Supply Chain Foundations: Inventory Management Professional Certificate | CSCMP via LinkedIn Learning | 06 Oct 2026 | e8dc4bb3900da6daf78b3f2d049851c97d9cadcc7b2b3334ec93200ea0604891 | (chưa có) | `CSCMP INVENTORY.jpg` | supply_chain |
-| 4 | Excel Supply Chain Analysis: Solving Inventory Problems | LinkedIn Learning | 06 Oct 2026 | 6aad65e6786848a8346b28d33fb2a6ad87874cc145c2f1672d8fbe89083ef5c3 | (chưa có) | `inventoryexcel.jpg` | supply_chain |
-| 5 | CSCMP Supply Chain Foundations: Demand Planning Professional Certificate | CSCMP via LinkedIn Learning | 28 Sep 2026 | e9ee14fc7c855512e06cca919a0476c0e5a8cb637feb2c64c5f247b7c8047c18 | (chưa có) | `CSCMP DEMAND PLANNING.jpg` | supply_chain |
-| 6 | Excel Data Analysis for Supply Chain: Forecasting | LinkedIn Learning | 28 Sep 2026 | ec8a71c6efc91d9efbda253835d6b2fb12c61e54a3a8824239e962f2a495a476 | (chưa có) | `forecasting excel.jpg` | supply_chain |
-| 7 | Foundations of Project Management | Google via Coursera | 10 Sep 2026 | XVGWBC9F4H99 | https://coursera.org/verify/XVGWBC9F4H99 | `PM Google.pdf` | ai |
+| 1 | Google Project Management Professional Certificate (7 courses) | Google via Coursera | 11 Nov 2026 | WJ33FA8HDQBD | https://coursera.org/verify/professional-cert/WJ33FA8HDQBD | `PM Google Professional.pdf` | ai |
+| 2 | CSCMP Supply Chain Foundations: Warehousing Operations Professional Certificate | CSCMP via LinkedIn Learning | 09 Oct 2026 | b16ad8268c77c9ed0a92e863a58f5e6ffd8b687cf8cb8d86b76f5e87cde4fe84 | (chưa có) | `CSCMP WAREHOUSING.jpg` | supply_chain |
+| 3 | Lean Six Sigma Foundations | LinkedIn Learning | 07 Oct 2026 | 4ffdbfdef27c2ce9828e7a1855f47f7d9a203879541500f31b7f7d7a17b5c4be | (chưa có) | `LEAN6SIGMALINKEDINLEARNING.jpg` | supply_chain |
+| 4 | CSCMP Supply Chain Foundations: Inventory Management Professional Certificate | CSCMP via LinkedIn Learning | 06 Oct 2026 | e8dc4bb3900da6daf78b3f2d049851c97d9cadcc7b2b3334ec93200ea0604891 | (chưa có) | `CSCMP INVENTORY.jpg` | supply_chain |
+| 5 | Excel Supply Chain Analysis: Solving Inventory Problems | LinkedIn Learning | 06 Oct 2026 | 6aad65e6786848a8346b28d33fb2a6ad87874cc145c2f1672d8fbe89083ef5c3 | (chưa có) | `inventoryexcel.jpg` | supply_chain |
+| 6 | CSCMP Supply Chain Foundations: Demand Planning Professional Certificate | CSCMP via LinkedIn Learning | 28 Sep 2026 | e9ee14fc7c855512e06cca919a0476c0e5a8cb637feb2c64c5f247b7c8047c18 | (chưa có) | `CSCMP DEMAND PLANNING.jpg` | supply_chain |
+| 7 | Excel Data Analysis for Supply Chain: Forecasting | LinkedIn Learning | 28 Sep 2026 | ec8a71c6efc91d9efbda253835d6b2fb12c61e54a3a8824239e962f2a495a476 | (chưa có) | `forecasting excel.jpg` | supply_chain |
 | 8 | Google AI Professional Certificate (7 courses) | Google via Coursera | 03 Aug 2026 | JWFHDMXMN2IA | https://coursera.org/verify/professional-cert/JWFHDMXMN2IA | `AI Google.pdf` | ai |
 | 9 | AI for Data Analysis | Google via Coursera | 03 Aug 2026 | 5UCZT4YL84UV | https://coursera.org/verify/5UCZT4YL84UV | `AIFORDA.pdf` | ai |
 | 10 | Google Data Analytics Professional Certificate (9 courses) | Google via Coursera | 01 Aug 2026 | FEVDUD12PM0I | https://coursera.org/verify/professional-cert/FEVDUD12PM0I | `DA Google.pdf` | data |
@@ -118,7 +118,7 @@ Nhóm lọc: `supply_chain`, `data`, `ai` (hiển thị "AI & Management", chủ
 
 Logo tương ứng: LinkedIn Learning `Linkedin.png`, CSCMP `CSCMP.jpg`, Google `Google.webp`, Udemy `Udemy.png`, VILAS `VILAS.png`, Data Science Academy `Data Science Academy.png`, NTU `NTU.png`, IDP `IDP.jpg`.
 
-Chứng chỉ "Project Management (Google)" ghi trong CV: chủ portfolio gửi file ngày 10 Oct 2026 (Foundations of Project Management, khóa đầu tiên của Google Project Management), đã đưa lên web ở nhóm `ai` (AI & Management).
+Chứng chỉ "Project Management (Google)" ghi trong CV: ngày 11 Nov 2026 chủ portfolio hoàn thành trọn Google Project Management Professional Certificate (7 courses, mã WJ33FA8HDQBD), thay cho mục Foundations of Project Management (khóa đầu tiên, mã XVGWBC9F4H99) trước đó; nhóm `ai` (AI & Management).
 
 ## 8. Projects
 

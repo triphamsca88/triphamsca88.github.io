@@ -15,6 +15,18 @@ const LOGO = {
 
 const certificates = [
   {
+    id: 'google-project-management',
+    name: 'Google Project Management Professional Certificate (7 courses)',
+    issuer: 'Google via Coursera',
+    logo: LOGO.google,
+    date: '2026-11-11',
+    credentialId: 'WJ33FA8HDQBD',
+    verifyUrl: 'https://coursera.org/verify/professional-cert/WJ33FA8HDQBD',
+    image: 'img/certificates/google_project_management.webp',
+    thumb: 'img/certificates/google_project_management_thumb.webp',
+    category: 'ai',
+  },
+  {
     id: 'cscmp-warehousing',
     name: 'CSCMP Supply Chain Foundations: Warehousing Operations Professional Certificate',
     issuer: 'CSCMP via LinkedIn Learning',
@@ -85,18 +97,6 @@ const certificates = [
     image: 'img/certificates/excel_forecasting.webp',
     thumb: 'img/certificates/excel_forecasting_thumb.webp',
     category: 'supply_chain',
-  },
-  {
-    id: 'google-project-management',
-    name: 'Foundations of Project Management',
-    issuer: 'Google via Coursera',
-    logo: LOGO.google,
-    date: '2026-09-10',
-    credentialId: 'XVGWBC9F4H99',
-    verifyUrl: 'https://coursera.org/verify/XVGWBC9F4H99',
-    image: 'img/certificates/google_project_management_foundations.webp',
-    thumb: 'img/certificates/google_project_management_foundations_thumb.webp',
-    category: 'ai',
   },
   {
     id: 'google-ai',
