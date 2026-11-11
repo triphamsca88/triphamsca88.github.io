@@ -11,8 +11,8 @@ const awards = [
     logoWide: true, // horizontal wordmark
     date: '2026-04-17', // decision date on the certificate; award edition 2025
     description: {
-      en: 'Research topic: Application of AI and IoT in Verifying the Transparency of Clean Food Supply Chains with Blockchain Technology Integration. Led the IoT and Data workstream; built a real time monitoring dashboard and a quantitative model to forecast product shelf life.',
-      vi: 'Đề tài: Ứng dụng AI và IoT trong xác thực tính minh bạch của chuỗi cung ứng thực phẩm sạch tích hợp công nghệ Blockchain. Phụ trách mảng IoT và Dữ liệu; xây dựng dashboard giám sát theo thời gian thực và mô hình định lượng dự báo hạn sử dụng sản phẩm.',
+      en: 'Research topic: Application of AI and IoT in Verifying the Transparency of Clean Food Supply Chains with Blockchain Technology Integration. Led the IoT and Data workstream; built a real time monitoring dashboard and a quantitative model to forecast product shelf life; designed the Level 0 data flow diagram (DFD) for the project’s information system.',
+      vi: 'Đề tài: Ứng dụng AI và IoT trong xác thực tính minh bạch của chuỗi cung ứng thực phẩm sạch tích hợp công nghệ Blockchain. Phụ trách mảng IoT và Dữ liệu; xây dựng dashboard giám sát theo thời gian thực và mô hình định lượng dự báo hạn sử dụng sản phẩm; thiết kế sơ đồ luồng dữ liệu (DFD) mức 0 cho hệ thống thông tin của dự án.',
     },
     image: 'img/awards/ctd_scholars_2025_unmasked.webp',
     thumb: 'img/awards/ctd_scholars_2025_unmasked_thumb.webp',

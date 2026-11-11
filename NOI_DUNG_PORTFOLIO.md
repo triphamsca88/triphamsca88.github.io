@@ -86,7 +86,7 @@ Supply chain analytics student focused on demand planning, inventory management 
 
 Mô tả từng giải:
 
-1. Research topic: Application of AI and IoT in Verifying the Transparency of Clean Food Supply Chains with Blockchain Technology Integration. Led the IoT and Data workstream; built a real time monitoring dashboard and a quantitative model to forecast product shelf life.
+1. Research topic: Application of AI and IoT in Verifying the Transparency of Clean Food Supply Chains with Blockchain Technology Integration. Led the IoT and Data workstream; built a real time monitoring dashboard and a quantitative model to forecast product shelf life; designed the Level 0 data flow diagram (DFD) for the project’s information system.
 2. Analysed bottlenecks in material supply, production capacity and logistics; formulated MPS/MRP schedules, capacity based production plans and optimised distribution strategies across multiple distribution centres.
 3. Applied quantitative models and data analytics to solve vehicle routing problems and minimise last mile delivery costs.
 4. Pitched a data driven barge scheduling algorithm (BOE) to maximise fleet capacity utilisation and relieve port congestion, earning an early Supply Chain Intern offer from Cofano Software Solutions Asia.
