@@ -21,7 +21,7 @@ const awards = [
   {
     id: 'scmission-2026',
     rank: { en: 'Top 20', vi: 'Top 20' },
-    title: 'SCMission 2026: The Vanguard (team SOTA)',
+    title: 'SCMission 2026: The Vanguard',
     org: 'Logistics Studying Club, FTU HCMC',
     logo: 'img/logo/scmission.webp',
     date: '2026-05',
@@ -31,7 +31,7 @@ const awards = [
     },
     image: 'img/awards/scmission_2026.webp',
     thumb: 'img/awards/scmission_2026_thumb.webp',
-    alt: 'SCMission 2026 certificate of appreciation, Top 20, team SOTA',
+    alt: 'SCMission 2026 certificate of appreciation, Top 20',
   },
   {
     id: 'last-mile-2025',

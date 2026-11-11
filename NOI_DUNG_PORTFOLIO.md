@@ -79,7 +79,7 @@ Supply chain analytics student focused on demand planning, inventory management 
 | # | Tên giải | Đơn vị | Thời gian | File gốc | Logo |
 |---|---|---|---|---|---|
 | 1 | Second Prize (Giải B), Student Scientific Research Award, CTD Scholars Student Awards 2025, theme Technology and Sustainable Development | Youth Union and Student Association of UEH, UEH College of Technology and Design | 2025 (quyết định ngày 17 Apr 2026) | `CTDSCHOLARS.jpg` (phải che ngày sinh, nơi sinh) | `CTD SCHOLARS.png` |
-| 2 | Top 20, SCMission 2026: The Vanguard (team SOTA) | Logistics Studying Club, FTU HCMC | May 2026 | `SCMISSION.jpg` | `scmission.png` |
+| 2 | Top 20, SCMission 2026: The Vanguard | Logistics Studying Club, FTU HCMC | May 2026 | `SCMISSION.jpg` | `scmission.png` |
 | 3 | Third Prize, Last Mile Delivery Optimizer 2025 | Institute of Intelligent and Interactive Technologies (I3T), UEH College of Technology and Design | 28 Dec 2025 | `LASTMILE3I.jpg` | `3Itech lastmile.jpg` |
 | 4 | Top 10 Semifinalist, Hackathon Digiport Logistics 2025, theme Digital Transformation for the Future of Seaports | UMT University, with Consulate General of the Netherlands and Tan Cang STC | 11 Nov 2025 | `HACKATHONDIGIPORTUMT.jpg` | `hackathong UMT.jpg` |
 | 5 | LSMSE Scholar, Le So Memorial Scholarship of Excellence | Sunflower Mission | 19 Oct 2025 | `LSMSESCHOLAR.jpg` | `LSMSE.png` |
