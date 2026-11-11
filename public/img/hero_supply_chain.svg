@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="t d">
   <title id="t">Supply chain analyst hero</title>
-  <desc id="d">An animated supply chain network from supplier to customer, with a barge on an inland waterway and a demand forecast card.</desc>
+  <desc id="d">An animated supply chain flow from supplier to seaport, by barge to an inland container depot, then factory, warehouse, distribution center and customer, with a demand forecast card.</desc>
   <defs>
     <radialGradient id="bg" cx="72%" cy="45%" r="85%">
       <stop offset="0" stop-color="#143A5C"/>
@@ -35,13 +35,12 @@
       @media (prefers-reduced-motion: reduce){.route,.fc,.ring{animation:none}}
     </style>
 
-    <path id="p1" d="M820,250 C930,250 1000,330 1080,420"/>
-    <path id="p2" d="M820,250 C760,350 690,440 700,560"/>
-    <path id="p3" d="M700,560 C760,660 860,700 960,690"/>
-    <path id="p4" d="M960,690 C1010,600 1030,500 1080,420"/>
-    <path id="p5" d="M1080,420 C1180,420 1260,450 1330,520"/>
-    <path id="p6" d="M1330,520 C1420,480 1450,410 1470,330"/>
-    <path id="p7" d="M960,690 C1100,700 1250,640 1330,520"/>
+    <path id="p1" d="M860,240 C805,370 800,560 846,664"/>
+    <path id="p2" d="M896,688 C990,736 1090,746 1174,716"/>
+    <path id="p3" d="M1180,690 C1170,610 1110,540 1036,512"/>
+    <path id="p4" d="M1010,474 C1030,410 1080,380 1154,374"/>
+    <path id="p5" d="M1206,380 C1270,400 1310,450 1330,494"/>
+    <path id="p6" d="M1352,505 C1420,470 1455,410 1468,356"/>
     <path id="bargePath" d="M330,920 C560,800 770,756 960,744 S1360,770 1610,700 L1735,665"/>
 
     <g id="parcel">
@@ -91,62 +90,69 @@
     </animateMotion>
   </g>
 
-  <!-- routes -->
+  <!-- routes: supplier, seaport, barge leg to ICD, factory, warehouse, distribution center, customer -->
   <use href="#p1" xlink:href="#p1" class="route"/>
   <use href="#p2" xlink:href="#p2" class="route alt"/>
-  <use href="#p3" xlink:href="#p3" class="route alt"/>
+  <use href="#p3" xlink:href="#p3" class="route"/>
   <use href="#p4" xlink:href="#p4" class="route"/>
   <use href="#p5" xlink:href="#p5" class="route"/>
   <use href="#p6" xlink:href="#p6" class="route alt"/>
-  <use href="#p7" xlink:href="#p7" class="route"/>
 
   <!-- moving parcels -->
-  <use href="#parcelT" xlink:href="#parcelT"><animateMotion dur="4.2s" repeatCount="indefinite"><mpath href="#p1" xlink:href="#p1"/></animateMotion></use>
-  <use href="#parcel" xlink:href="#parcel"><animateMotion dur="4.8s" repeatCount="indefinite" begin="-1s"><mpath href="#p2" xlink:href="#p2"/></animateMotion></use>
-  <use href="#parcel" xlink:href="#parcel"><animateMotion dur="3.6s" repeatCount="indefinite" begin="-2s"><mpath href="#p3" xlink:href="#p3"/></animateMotion></use>
-  <use href="#parcelT" xlink:href="#parcelT"><animateMotion dur="4s" repeatCount="indefinite" begin="-0.5s"><mpath href="#p4" xlink:href="#p4"/></animateMotion></use>
-  <use href="#parcelT" xlink:href="#parcelT"><animateMotion dur="3.4s" repeatCount="indefinite" begin="-1.5s"><mpath href="#p5" xlink:href="#p5"/></animateMotion></use>
+  <use href="#parcelT" xlink:href="#parcelT"><animateMotion dur="4.4s" repeatCount="indefinite"><mpath href="#p1" xlink:href="#p1"/></animateMotion></use>
+  <use href="#parcel" xlink:href="#parcel"><animateMotion dur="5s" repeatCount="indefinite" begin="-1s"><mpath href="#p2" xlink:href="#p2"/></animateMotion></use>
+  <use href="#parcelT" xlink:href="#parcelT"><animateMotion dur="3.6s" repeatCount="indefinite" begin="-2s"><mpath href="#p3" xlink:href="#p3"/></animateMotion></use>
+  <use href="#parcelT" xlink:href="#parcelT"><animateMotion dur="3.4s" repeatCount="indefinite" begin="-0.5s"><mpath href="#p4" xlink:href="#p4"/></animateMotion></use>
+  <use href="#parcelT" xlink:href="#parcelT"><animateMotion dur="3.2s" repeatCount="indefinite" begin="-1.5s"><mpath href="#p5" xlink:href="#p5"/></animateMotion></use>
   <use href="#parcel" xlink:href="#parcel"><animateMotion dur="3s" repeatCount="indefinite" begin="-0.8s"><mpath href="#p6" xlink:href="#p6"/></animateMotion></use>
-  <use href="#parcelT" xlink:href="#parcelT"><animateMotion dur="5s" repeatCount="indefinite" begin="-2.4s"><mpath href="#p7" xlink:href="#p7"/></animateMotion></use>
 
   <!-- nodes -->
   <!-- supplier -->
-  <g transform="translate(820,250)">
+  <g transform="translate(870,240)">
     <circle class="ring" r="26"/>
     <circle class="node" r="26"/>
     <!-- package: goods leave the supplier -->
     <path class="ico" d="M0,-12 L11,-6 V7 L0,13 L-11,7 V-6 Z M-11,-6 L0,0 L11,-6 M0,0 V13 M-5.5,-9 L5.5,-3"/>
     <text class="lbl" y="52" text-anchor="middle">SUPPLIER</text>
   </g>
-  <!-- factory -->
-  <g transform="translate(700,560)">
+  <!-- seaport -->
+  <g transform="translate(870,678)">
     <circle class="ring" r="26" style="animation-delay:.6s"/>
-    <circle class="node" r="26"/>
-    <path class="ico" d="M-13,10 V-1 L-7,-6 V-1 L-1,-6 V-1 L5,-6 V-1 L13,-1 V10 Z M7,-1 V-12 H11 V-1"/>
-    <text class="lbl" y="52" text-anchor="middle">FACTORY</text>
-  </g>
-  <!-- port / ICD -->
-  <g transform="translate(960,690)">
-    <circle class="ring" r="26" style="animation-delay:1.2s"/>
     <circle class="node" r="26" style="stroke:#F4A259"/>
     <path class="ico" d="M-14,3 H14 L9,10 H-9 Z"/>
     <rect class="ico" x="-9" y="-6" width="6" height="8"/>
     <rect class="ico" x="-2" y="-6" width="6" height="8"/>
     <rect class="ico" x="5" y="-3" width="5" height="5"/>
-    <text class="lbl" y="-40" text-anchor="middle">PORT · ICD</text>
+    <text class="lbl" y="52" text-anchor="middle">SEAPORT</text>
+  </g>
+  <!-- ICD: inland container depot -->
+  <g transform="translate(1200,712)">
+    <circle class="ring" r="26" style="animation-delay:1.2s"/>
+    <circle class="node" r="26" style="stroke:#F4A259"/>
+    <rect class="ico" x="-13" y="1" width="12.5" height="8"/>
+    <rect class="ico" x="0.5" y="1" width="12.5" height="8"/>
+    <rect class="ico" x="-6.25" y="-9" width="12.5" height="8"/>
+    <text class="lbl" y="52" text-anchor="middle">ICD</text>
+  </g>
+  <!-- factory -->
+  <g transform="translate(1010,500)">
+    <circle class="ring" r="26" style="animation-delay:1.8s"/>
+    <circle class="node" r="26"/>
+    <path class="ico" d="M-13,10 V-1 L-7,-6 V-1 L-1,-6 V-1 L5,-6 V-1 L13,-1 V10 Z M7,-1 V-12 H11 V-1"/>
+    <text class="lbl" y="52" text-anchor="middle">FACTORY</text>
   </g>
   <!-- warehouse -->
-  <g transform="translate(1080,420)">
-    <circle class="ring" r="26" style="animation-delay:1.8s"/>
+  <g transform="translate(1180,372)">
+    <circle class="ring" r="26" style="animation-delay:2.4s"/>
     <circle class="node" r="26"/>
     <path class="ico" d="M-13,10 V-3 L0,-11 L13,-3 V10 Z"/>
     <rect class="ico" x="-6" y="1" width="12" height="9"/>
     <path class="ico" d="M-6,4 H6 M-6,7 H6"/>
     <text class="lbl" y="52" text-anchor="middle">WAREHOUSE</text>
   </g>
-  <!-- distribution centre -->
-  <g transform="translate(1330,520)">
-    <circle class="ring" r="26" style="animation-delay:2.4s"/>
+  <!-- distribution center -->
+  <g transform="translate(1340,520)">
+    <circle class="ring" r="26" style="animation-delay:.9s"/>
     <circle class="node" r="26"/>
     <!-- delivery truck: outbound distribution -->
     <path class="ico" d="M-13,-7 H3 V6 H-13 Z M3,-3 H8.5 L13,2 V6 H3"/>
