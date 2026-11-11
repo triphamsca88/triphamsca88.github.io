@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="t d">
   <title id="t">Supply chain analyst hero</title>
-  <desc id="d">An animated supply chain flow from supplier to seaport, by barge to an inland container depot, then factory, warehouse, distribution center and customer, with a demand forecast card.</desc>
+  <desc id="d">An animated supply chain flow from supplier to a seaport on the water, by barge to an inland container depot on land, then factory, warehouse, distribution center and customer, with a demand forecast card.</desc>
   <defs>
     <radialGradient id="bg" cx="72%" cy="45%" r="85%">
       <stop offset="0" stop-color="#143A5C"/>
@@ -29,18 +29,21 @@
       .ct{font:700 13px 'Segoe UI',Inter,Arial,sans-serif;letter-spacing:2.4px;fill:#EAF4FB}
       .cs{font:500 11px 'Segoe UI',Inter,Arial,sans-serif;letter-spacing:1.4px;fill:#8FB3CE}
       .fc{fill:none;stroke:#F4A259;stroke-width:2.4;stroke-dasharray:7 6;animation:flow 1.8s linear infinite}
+      .signal{fill:none;stroke:#EAD9B8;stroke-width:1.8;stroke-opacity:.7;stroke-dasharray:4 7;animation:flow 2.2s linear infinite}
+      .ico2{fill:none;stroke:#F4A259;stroke-width:5;stroke-linejoin:round;stroke-linecap:round}
       @keyframes flow{to{stroke-dashoffset:-32}}
       @keyframes pulse{0%{r:26px;opacity:.55}100%{r:46px;opacity:0}}
       .ring{fill:none;stroke:#2EC4B6;stroke-width:1.6;animation:pulse 3s ease-out infinite}
-      @media (prefers-reduced-motion: reduce){.route,.fc,.ring{animation:none}}
+      @media (prefers-reduced-motion: reduce){.route,.fc,.ring,.signal{animation:none}}
     </style>
 
-    <path id="p1" d="M860,240 C805,370 800,560 846,664"/>
-    <path id="p2" d="M896,688 C990,736 1090,746 1174,716"/>
-    <path id="p3" d="M1180,690 C1170,610 1110,540 1036,512"/>
+    <path id="p1" d="M846,252 C812,310 810,580 852,730"/>
+    <path id="p2" d="M896,748 C1030,742 1250,752 1222,648"/>
+    <path id="p3" d="M1188,609 C1160,560 1100,525 1036,512"/>
     <path id="p4" d="M1010,474 C1030,410 1080,380 1154,374"/>
     <path id="p5" d="M1206,380 C1270,400 1310,450 1330,494"/>
     <path id="p6" d="M1352,505 C1420,470 1455,410 1468,356"/>
+    <path id="p7" d="M1456,306 C1442,286 1424,268 1412,252"/>
     <path id="bargePath" d="M330,920 C560,800 770,756 960,744 S1360,770 1610,700 L1735,665"/>
 
     <g id="parcel">
@@ -97,6 +100,8 @@
   <use href="#p4" xlink:href="#p4" class="route"/>
   <use href="#p5" xlink:href="#p5" class="route"/>
   <use href="#p6" xlink:href="#p6" class="route alt"/>
+  <!-- demand signal: customer feeds the forecast -->
+  <use href="#p7" xlink:href="#p7" class="signal"/>
 
   <!-- moving parcels -->
   <use href="#parcelT" xlink:href="#parcelT"><animateMotion dur="4.4s" repeatCount="indefinite"><mpath href="#p1" xlink:href="#p1"/></animateMotion></use>
@@ -105,6 +110,7 @@
   <use href="#parcelT" xlink:href="#parcelT"><animateMotion dur="3.4s" repeatCount="indefinite" begin="-0.5s"><mpath href="#p4" xlink:href="#p4"/></animateMotion></use>
   <use href="#parcelT" xlink:href="#parcelT"><animateMotion dur="3.2s" repeatCount="indefinite" begin="-1.5s"><mpath href="#p5" xlink:href="#p5"/></animateMotion></use>
   <use href="#parcel" xlink:href="#parcel"><animateMotion dur="3s" repeatCount="indefinite" begin="-0.8s"><mpath href="#p6" xlink:href="#p6"/></animateMotion></use>
+  <circle r="4.5" fill="#EAD9B8"><animateMotion dur="2.6s" repeatCount="indefinite"><mpath href="#p7" xlink:href="#p7"/></animateMotion></circle>
 
   <!-- nodes -->
   <!-- supplier -->
@@ -115,23 +121,34 @@
     <path class="ico" d="M0,-12 L11,-6 V7 L0,13 L-11,7 V-6 Z M-11,-6 L0,0 L11,-6 M0,0 V13 M-5.5,-9 L5.5,-3"/>
     <text class="lbl" y="52" text-anchor="middle">SUPPLIER</text>
   </g>
-  <!-- seaport -->
-  <g transform="translate(870,678)">
+  <!-- seaport: on the water, crane loading a ship -->
+  <g transform="translate(870,750)">
     <circle class="ring" r="26" style="animation-delay:.6s"/>
     <circle class="node" r="26" style="stroke:#F4A259"/>
-    <path class="ico" d="M-14,3 H14 L9,10 H-9 Z"/>
-    <rect class="ico" x="-9" y="-6" width="6" height="8"/>
-    <rect class="ico" x="-2" y="-6" width="6" height="8"/>
-    <rect class="ico" x="5" y="-3" width="5" height="5"/>
+    <g transform="scale(0.34) translate(-123,-111)">
+      <path class="ico2" d="M78,88 H162 M103,72 L113,58 L123,72 M103,72 V150 M123,72 V150 M103,72 H123 M103,96 L123,120 M123,96 L103,120 M147,88 V102"/>
+      <rect class="ico2" x="139" y="102" width="16" height="7"/>
+      <rect class="ico2" x="140" y="126" width="18" height="11"/>
+      <path class="ico2" d="M130,137 H168 L161,151 H137 Z"/>
+      <path class="ico2" d="M126,164 q6,-6 12,0 t12,0 t12,0 t12,0"/>
+    </g>
     <text class="lbl" y="52" text-anchor="middle">SEAPORT</text>
   </g>
-  <!-- ICD: inland container depot -->
-  <g transform="translate(1200,712)">
+  <!-- ICD: inland container depot on land, gantry over stacked containers -->
+  <g transform="translate(1200,632)">
     <circle class="ring" r="26" style="animation-delay:1.2s"/>
     <circle class="node" r="26" style="stroke:#F4A259"/>
-    <rect class="ico" x="-13" y="1" width="12.5" height="8"/>
-    <rect class="ico" x="0.5" y="1" width="12.5" height="8"/>
-    <rect class="ico" x="-6.25" y="-9" width="12.5" height="8"/>
+    <g transform="scale(0.34) translate(-503,-118)">
+      <path class="ico2" d="M462,150 V82 H544 V150 M503,82 V96 M454,154 H552"/>
+      <rect class="ico2" x="491" y="96" width="24" height="7"/>
+      <g style="fill:#1F4A6E">
+        <rect class="ico2" x="469" y="133" width="22" height="17" style="fill:inherit"/>
+        <rect class="ico2" x="492" y="133" width="22" height="17" style="fill:inherit"/>
+        <rect class="ico2" x="515" y="133" width="22" height="17" style="fill:inherit"/>
+        <rect class="ico2" x="480" y="115" width="22" height="18" style="fill:inherit"/>
+        <rect class="ico2" x="503" y="115" width="22" height="18" style="fill:inherit"/>
+      </g>
+    </g>
     <text class="lbl" y="52" text-anchor="middle">ICD</text>
   </g>
   <!-- factory -->
