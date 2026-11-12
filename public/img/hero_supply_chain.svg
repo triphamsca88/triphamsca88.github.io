@@ -37,9 +37,9 @@
       @media (prefers-reduced-motion: reduce){.route,.fc,.ring,.signal{animation:none}}
     </style>
 
-    <path id="p1" d="M846,252 C812,310 810,580 852,730"/>
-    <path id="p2" d="M896,748 C1030,742 1250,752 1222,648"/>
-    <path id="p3" d="M1188,609 C1160,560 1100,525 1036,512"/>
+    <path id="p1" d="M848,354 C816,420 812,610 851,697"/>
+    <path id="p2" d="M896,718 C1010,724 1150,726 1182,690"/>
+    <path id="p3" d="M1190,648 C1165,580 1100,530 1036,512"/>
     <path id="p4" d="M1010,474 C1030,410 1080,380 1154,374"/>
     <path id="p5" d="M1206,380 C1270,400 1310,450 1330,494"/>
     <path id="p6" d="M1352,505 C1420,470 1455,410 1468,356"/>
@@ -114,7 +114,7 @@
 
   <!-- nodes -->
   <!-- supplier -->
-  <g transform="translate(870,240)">
+  <g transform="translate(870,340)">
     <circle class="ring" r="26"/>
     <circle class="node" r="26"/>
     <!-- package: goods leave the supplier -->
@@ -122,7 +122,7 @@
     <text class="lbl" y="52" text-anchor="middle">SUPPLIER</text>
   </g>
   <!-- seaport: on the water, crane loading a ship -->
-  <g transform="translate(870,750)">
+  <g transform="translate(870,714)">
     <circle class="ring" r="26" style="animation-delay:.6s"/>
     <circle class="node" r="26" style="stroke:#F4A259"/>
     <g transform="scale(0.34) translate(-123,-111)">
@@ -135,7 +135,7 @@
     <text class="lbl" y="52" text-anchor="middle">SEAPORT</text>
   </g>
   <!-- ICD: inland container depot on land, gantry over stacked containers -->
-  <g transform="translate(1200,632)">
+  <g transform="translate(1200,672)">
     <circle class="ring" r="26" style="animation-delay:1.2s"/>
     <circle class="node" r="26" style="stroke:#F4A259"/>
     <g transform="scale(0.34) translate(-503,-118)">
@@ -149,7 +149,7 @@
         <rect class="ico2" x="503" y="115" width="22" height="18" style="fill:inherit"/>
       </g>
     </g>
-    <text class="lbl" y="52" text-anchor="middle">ICD</text>
+    <text class="lbl" x="40" y="5">ICD</text>
   </g>
   <!-- factory -->
   <g transform="translate(1010,500)">
