@@ -73,7 +73,8 @@ const awards = [
     title: 'LSMSE Scholar, Le So Memorial Scholarship of Excellence',
     org: 'Sunflower Mission',
     logo: 'img/logo/lsmse.webp',
-    date: '2025-10-19',
+    date: '2025-10-19', // award date, kept for sorting
+    period: { start: '2025', end: '2028' }, // scholarship period shown on the site and the CV
     description: {
       en: 'Awarded the title LSMSE Scholar in recognition of academic excellence.',
       vi: 'Được trao danh hiệu LSMSE Scholar nhằm ghi nhận thành tích học tập xuất sắc.',

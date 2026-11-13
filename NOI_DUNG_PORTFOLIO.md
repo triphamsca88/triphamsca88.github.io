@@ -82,7 +82,7 @@ Supply chain analytics student focused on demand planning, inventory management 
 | 2 | Top 20, SCMission 2026: The Vanguard | Logistics Studying Club, FTU HCMC | May 2026 | `SCMISSION.jpg` | `scmission.png` |
 | 3 | Third Prize, Last Mile Delivery Optimizer 2025 | Institute of Intelligent and Interactive Technologies (I3T), UEH College of Technology and Design | 28 Dec 2025 | `LASTMILE3I.jpg` | `3Itech lastmile.jpg` |
 | 4 | Top 10 Semifinalist, Hackathon Digiport Logistics 2025, theme Digital Transformation for the Future of Seaports | UMT University, with Consulate General of the Netherlands and Tan Cang STC | 11 Nov 2025 | `HACKATHONDIGIPORTUMT.jpg` | `hackathong UMT.jpg` |
-| 5 | LSMSE Scholar, Le So Memorial Scholarship of Excellence | Sunflower Mission | 19 Oct 2025 | `LSMSESCHOLAR.jpg` | `LSMSE.png` |
+| 5 | LSMSE Scholar, Le So Memorial Scholarship of Excellence | Sunflower Mission | 19 Oct 2025 (web và CV hiển thị thời gian học bổng 2025 to 2028, chủ portfolio yêu cầu ngày 13 Nov 2026) | `LSMSESCHOLAR.jpg` | `LSMSE.png` |
 
 Mô tả từng giải:
 

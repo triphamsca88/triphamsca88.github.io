@@ -10,6 +10,8 @@ const base = process.env.VITE_BASE || '/'
 // Content hash of the hero image: its URL changes whenever the SVG changes, so browsers never show a stale copy.
 const heroVersion = createHash('sha1').update(readFileSync('public/img/hero_supply_chain.svg')).digest('hex').slice(0, 8)
 process.env.VITE_HERO_V = heroVersion
+// Same for the public CV: a new PDF gets a new link, so the browser never reopens an old cached copy.
+const cvVersion = createHash('sha1').update(readFileSync('public/cv/Pham_Duc_Tri_CV.pdf')).digest('hex').slice(0, 8)
 
 export default defineConfig({
   base,
@@ -25,5 +27,6 @@ export default defineConfig({
     // Same base for the client and the SSR prerender build (Vite SSR ignores a relative base).
     __ASSET_BASE__: JSON.stringify(base),
     __HERO_V__: JSON.stringify(heroVersion),
+    __CV_V__: JSON.stringify(cvVersion),
   },
 })

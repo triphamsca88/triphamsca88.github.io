@@ -1,7 +1,7 @@
 import { Award } from 'lucide-react'
 import { useLocalized } from '../i18n/useLocalized.js'
 import awards from '../data/awards.js'
-import { newestFirst, formatDate } from '../utils/dates.js'
+import { newestFirst, formatDate, formatRange } from '../utils/dates.js'
 import { asset } from '../utils/asset.js'
 import { numOf } from '../sections.js'
 import SectionHeader from './SectionHeader.jsx'
@@ -17,7 +17,7 @@ function AwardRow({ a }) {
     <li className="award">
       <div className="award__rank">
         <span className="rank-badge"><Award aria-hidden="true" />{L(a.rank)}</span>
-        <span className="award__date">{formatDate(a.date, lang)}</span>
+        <span className="award__date">{a.period ? formatRange(a.period.start, a.period.end, lang, t) : formatDate(a.date, lang)}</span>
       </div>
       <div className="award__body">
         <h3 className="award__title">{a.title}</h3>
