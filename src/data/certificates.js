@@ -15,6 +15,18 @@ const LOGO = {
 
 const certificates = [
   {
+    id: 'google-advanced-data-analytics',
+    name: 'Google Advanced Data Analytics Professional Certificate (7 courses)',
+    issuer: 'Google via Coursera',
+    logo: LOGO.google,
+    date: '2026-11-21',
+    credentialId: '71DU31MQO4S3',
+    verifyUrl: 'https://coursera.org/verify/professional-cert/71DU31MQO4S3',
+    image: 'img/certificates/google_advanced_data_analytics.webp',
+    thumb: 'img/certificates/google_advanced_data_analytics_thumb.webp',
+    category: 'data',
+  },
+  {
     id: 'google-project-management',
     name: 'Google Project Management Professional Certificate (7 courses)',
     issuer: 'Google via Coursera',
